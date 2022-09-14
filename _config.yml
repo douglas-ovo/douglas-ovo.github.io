@@ -47,7 +47,7 @@ highlight:                                #代码块的设置, see Highlight.js 
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: '\t\t\t\t'
   wrap: true
   hljs: false
 prismjs:                                  #代码块的设置, see PrismJS section for usage guide
