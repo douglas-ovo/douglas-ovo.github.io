@@ -216,11 +216,15 @@ methods: {
 
 ### 应用打包踩坑
 1. 配置项 
-打包文件时将dist和release清除干净，否则有些项目的配置会将dist的剩余文件打包到exe文件中导致包体积过大
-下面的electron-builder.json5中的files配置为打包dist下的文件
-若项目中没有单独的build配置文件，则需在package.json中加入配置项build
-[参考博客](https://segmentfault.com/a/1190000018533945)
-具体配置如下：
+>打包文件时将dist和release清除干净，否则有些项目的配置会将dist的剩余文件打包到exe文件中导致包体积过大；
+>
+>下面的electron-builder.json5中的files配置为打包dist下的文件；
+>
+>若项目中没有单独的build配置文件，则需在package.json中加入配置项build；
+>
+>[参考博客](https://segmentfault.com/a/1190000018533945)；
+>
+>具体配置如下：
 
 ```json5
 /**
