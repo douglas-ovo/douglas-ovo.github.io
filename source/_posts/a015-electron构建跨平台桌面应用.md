@@ -215,7 +215,51 @@ methods: {
 ```
 
 ### 应用打包踩坑
-待更新...
+1. 配置项 
+打包文件时将dist和release清除干净，否则有些项目的配置会将dist的剩余文件打包到exe文件中导致包体积过大
+下面的electron-builder.json5中的files配置为打包dist下的文件
+若项目中没有单独的build配置文件，则需在package.json中加入配置项build
+[参考博客](https://segmentfault.com/a/1190000018533945)
+具体配置如下：
+
+```json5
+/**
+ * @see https://www.electron.build/configuration/configuration 官方文档
+ */
+{
+  appId: 'YourAppID',
+  productName: '知识产权从业人员信息化管理系统V1.0',
+  asar: true,
+  directories: {
+    output: 'release'
+  },
+  files: ['dist'],
+  mac: {
+    icon: 'dist/renderer/icon.icns',
+    artifactName: '${productName}_${version}.${ext}',
+    target: ['dmg']
+  },
+  win: {
+    icon: 'dist/renderer/icon.ico',
+    target: [
+      {
+        target: 'nsis',
+        arch: ['x64']
+      }
+    ],
+    artifactName: '${productName}.${ext}'
+  },
+  nsis: {
+    oneClick: false,
+    perMachine: false,
+    allowToChangeInstallationDirectory: true,
+    deleteAppDataOnUninstall: false
+  }
+}
+```
+
+2. 所需依赖包，报错问题
+[参考博客](https://segmentfault.com/a/1190000018533945)
 
 ---
 官方文档：[electronjs](https://www.electronjs.org/)
