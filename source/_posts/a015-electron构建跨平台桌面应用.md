@@ -222,7 +222,7 @@ methods: {
 >
 >若项目中没有单独的build配置文件，则需在package.json中加入配置项build； 
 >
->[参考博客](https://segmentfault.com/a/1190000018533945)；
+>[参考博客](http://www.icodebang.com/article/322621)；
 >
 >具体配置如下：
 
