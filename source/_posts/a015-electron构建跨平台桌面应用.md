@@ -220,7 +220,7 @@ methods: {
 >
 >下面的electron-builder.json5中的files配置为打包dist下的文件；
 >
->若项目中没有单独的build配置文件，则需在package.json中加入配置项build；
+>若项目中没有单独的build配置文件，则需在package.json中加入配置项build； 
 >
 >[参考博客](https://segmentfault.com/a/1190000018533945)；
 >
@@ -263,7 +263,7 @@ methods: {
 ```
 
 2. 所需依赖包，报错问题
-[参考博客](https://segmentfault.com/a/1190000018533945)
+>[参考博客](https://segmentfault.com/a/1190000018533945)
 
 ---
 官方文档：[electronjs](https://www.electronjs.org/)
