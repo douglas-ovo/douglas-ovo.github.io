@@ -8,6 +8,11 @@ date: 2022-07-07 15:58:23
 index_img:  https://img0.baidu.com/it/u=1641948811,72191990&fm=253&fmt=auto&app=138&f=JPG?w=1000&h=420
 ---
 
+### github访问慢？
+1. 使用dns查询工具，查询github.com，将TTL最小的ip复制
+2. 找到对应路径C:\Windows\System32\drivers\etc下的 hosts文件
+![图示](https://img-blog.csdnimg.cn/2021042623563665.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYwODc0NA==,size_16,color_FFFFFF,t_70#pic_center)
+
 ### 本地信息配置
 ```git
 git config --global --list
