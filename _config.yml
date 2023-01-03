@@ -12,7 +12,7 @@ language: zh-CN                           # 网站采用语言，要跟/theme/**
 timezone: Asia/Shanghai                   # 网站的时区
 
 # URL
-url: https://s1xpences.github.io/         # 网站的url，如果不在域名根目录，应包含子目录，且root要设置为`/子目录/`
+url: https://douglas-ovo.github.io/         # 网站的url，如果不在域名根目录，应包含子目录，且root要设置为`/子目录/`
 root: /                                   # 网站的根目录
 permalink: :year/:month/:day/:title/      #文章永久链接的形成模版。每一篇文章都有唯一的url。
 permalink_defaults:                       #文章永久链接中，各部分的默认值。
@@ -90,5 +90,5 @@ theme: fluid                               #当前主题名称。值为false时�
 # Deployment
 deploy:                                   #部署部分的设置
   type: 'git'
-  repo: https://github.com/s1xpences/s1xpences.github.io.git
+  repo: https://github.com/douglas-ovo/douglas-ovo.github.io.git
   branch: 'server'
