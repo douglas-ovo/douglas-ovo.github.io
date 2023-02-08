@@ -33,15 +33,15 @@ ssh-keygen -t rsa -C 'xxx@xxx.com'
 
 ### 提交注释
 
-feat: 新功能（feature） 
+feat: 新功能（feature）
 fix: 修补 bug  
 docs: 文档（documentation）  
 style: 格式（不影响代码运行的变动）  
 refactor: 重构（即不是新增功能，也不是修改 bug 的代码变动）  
-chore: 构建过程或辅助工具的变动   
-revert: 撤销，版本回退    
-perf: 性能优化    
-test：测试   
+chore: 构建过程或辅助工具的变动  
+revert: 撤销，版本回退  
+perf: 性能优化  
+test：测试  
 improvement: 改进  
 build: 打包  
 ci: 持续集成
@@ -78,9 +78,9 @@ git add .
 git commit -m 'xxx'
 git branch -M main                     //重命名当前本地分支，初始分支名为master
 git remote add origin git@xxxx.git     //origin为远程仓库名，可以自定义
-git push -u origin main:master         //main为本地分支名，master为远程分支名，之后push需要指定远程仓库名
+git push origin -u main:master         //main为本地分支名，master为远程分支名，之后push需要指定远程仓库名
 或
-git push -u origin master              //本地分支名和远程分支名一样，之后可直接push，本地分支名和远程分支名尽量保持一样
+git push origin -u master              //本地分支名和远程分支名一样，之后可直接push，本地分支名和远程分支名尽量保持一样
 ```
 
 2. 由别人创建仓库
@@ -97,7 +97,7 @@ git clone -b xxx git@xxxx.git          //克隆其他分支，克隆后本地默
 
 ```git
 git checkout -b 新分支名
-git push -u origin dev
+git push origin -u dev
 ```
 
 ### 分支重命名
@@ -111,8 +111,8 @@ git branch -m 原分支名称 新分支名称
 2. 远程分支
 
 ```git
-git push --delete origin 自己的原分支名称
-git push origin 新分支名称
+git push origin -d 自己的原分支名称
+git push origin -u 新分支名称
 ```
 
 3. 重命名分支为远程默认分支时
@@ -122,7 +122,7 @@ git push origin 新分支名称
 
 ```git
 git branch -d 本地分支名
-git push origin --delete 远程分支名
+git push origin -d 远程分支名
 ```
 
 ### 合并分支
@@ -149,7 +149,7 @@ git switch 本地分支名
 files change...
 git add .
 git commit -m 'xxx'
-git push -u origin 远程分支名
+git push origin -u 远程分支名
 ```
 
 ### 移除工作区修改
@@ -165,11 +165,11 @@ git checkout 文件路径
 ### 取消 add 操作
 
 ```git
-git restore --staged .
+git restore .
 
 或
 
-git restore --staged 文件路径
+git restore 文件路径
 ```
 
 ### 取消 commit 操作
@@ -217,7 +217,7 @@ git tag xxx commitid                   //给指定的commitid打tag
 git tag xxx -m "注释" commitid         //给指定的commitid打tag同时添加注释
 git push origin xxx                    //将本地tag推送到远程
 git push origin --tag                  //本地所有tag推送到远程
-git tag --d xxx                        //删除本地tag，删除本地后git pull会将远程的tag拉下来
+git tag -d xxx                        //删除本地tag，删除本地后git pull会将远程的tag拉下来
 git push origin -d xxx                 //删除远程tag
 git show xxx                           //查看对应tag提交信息
 git tag                                //查看本地所有tag
