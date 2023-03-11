@@ -171,8 +171,8 @@ git reset
 ### 取消 commit 操作
 之前提交过
 ```git
-git reset --soft HEAD^ 仅撤销commit
-git reset --mixed HEAD^ 撤销commit，add
+git reset --soft HEAD^     //仅撤销commit
+git reset --mixed HEAD^    //撤销commit，add
 ```
 
 第一次提交
