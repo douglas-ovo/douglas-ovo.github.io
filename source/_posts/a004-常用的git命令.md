@@ -165,18 +165,18 @@ git checkout 文件路径
 ### 取消 add 操作
 
 ```git
-git restore .
-
-或
-
-git restore 文件路径
+git reset
 ```
 
 ### 取消 commit 操作
-
+之前提交过
 ```git
-git reset --hard 上一次的commitid
+git reset --soft HEAD^ 仅撤销commit
+git reset --mixed HEAD^ 撤销commit，add
 ```
+
+第一次提交
+删除.git文件夹重新提交
 
 ### 版本控制
 
