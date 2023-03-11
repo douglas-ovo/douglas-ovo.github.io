@@ -1,9 +1,9 @@
 ---
-title: 了不起的TypeScript
+title: 了不起的typescript
 categories:
   - 前端学习
 tags:
-  - TypeScript
+  - typescript
 date: 2022-07-18 14:17:57
 index_img: https://img0.baidu.com/it/u=4167016203,3166254551&fm=253&fmt=auto&app=138&f=JPEG?w=499&h=311
 ---
