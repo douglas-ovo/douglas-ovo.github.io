@@ -1,5 +1,5 @@
 ---
-title: a20-js迭代器和生成器
+title: js迭代器和生成器
 categories:
   + 前端学习
 tags:
