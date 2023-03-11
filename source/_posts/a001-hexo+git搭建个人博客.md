@@ -2,10 +2,10 @@
 title: hexo+git搭建个人博客
 date: 2022-07-01 14:16:05
 categories:
-* 前端学习
+  - 前端学习
 tags:
-* Hexo
-* Git
+  - Hexo
+  - Git
 index_img: https://img2.baidu.com/it/u=1969408648,3814003583&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1657731600&t=e24c64adf1ac37cadc237a70fc3ee967
 ---
 
