@@ -1,0 +1,240 @@
+---
+title: a20-js迭代器和生成器
+categories:
+  + 前端学习
+tags:
+  + 迭代器Iterators
+  + 生成器generators
+date: 2023-03-11 19:28:13
+index_img: https://img1.baidu.com/it/u=34177512,1944202666&fm=253&fmt=auto&app=138&f=JPEG?w=900&h=383
+---
+
+### 迭代器和生成器(Iterators&generators)
+
+### 可迭代对象的应用场景
+
+> js中语法：for...of、展开语法(spread syntax)、yield*、解构赋值(Destructuring_assignment)；
+> 创建一些对象时：new Map([Iterable])、new WeakMap([Iterable])、new Set([Iterable])、new WeakSet([Iterable])；
+> 一些方法的调用：Promise.all(Iterable)、Promise.race(Iterable)、Array.from(Iterable)
+
+### 生成器
+
+是 es6 中新增的一种函数控制、使用方案，可以让我们更加灵活的控制函数什么时候继续执行、暂停执行等。
+
+> 生成器函数需要加\*
+> 生成器函数可以通过 yield 关键字来控制函数的执行流程
+> 生成器函数的返回值是一个生成器(Generator)
+> 生成器是一种特殊的迭代器
+> 生成器是async/await的语法糖
+
+### 迭代器
+
+```javascript
+const names = ['hello', 'iterators', 'speak']
+
+function createArrIterators(arr) {
+    let index = 0
+    return {
+        next() {
+            if (index < arr.length) {
+                return {
+                    done: false,
+                    value: arr[index++]
+                }
+            } else {
+                return {
+                    done: true,
+                    value: undefined
+                }
+            }
+        }
+    }
+}
+const namesIterator = createArrIterators(names)
+console.log(namesIterator.next());
+console.log(namesIterator.next());
+console.log(namesIterator.next());
+console.log(namesIterator.next());
+```
+
+### 可迭代对象
+
+```javascript
+const info = {
+    name: 'jack',
+    age: 25,
+    gender: '男',
+    [Symbol.iterator]() { //计算属性名
+        // const keys = Object.keys(this)
+        // const values = Object.values(this)
+        const entries = Object.entries(this)
+        let index = 0
+        return {
+            next: () => {
+                if (index < entries.length) {
+                    return {
+                        done: false,
+                        value: entries[index++]
+                    }
+                } else {
+                    return {
+                        done: true,
+                        value: undefined
+                    }
+                }
+            }
+        }
+    }
+}
+const infoIterator = info[Symbol.iterator]()
+// console.log(infoIterator.next());
+// console.log(infoIterator.next());
+// console.log(infoIterator.next());
+// console.log(infoIterator.next());
+for (let item of info) {
+    console.log(item);
+}
+
+const numarr = [1, 2, 3]
+const numarrIterator = numarr[Symbol.iterator]()
+// console.log(numarrIterator.next());
+// console.log(numarrIterator.next());
+// console.log(numarrIterator.next());
+// console.log(numarrIterator.next());
+```
+
+### 自定义类的迭代
+
+```javascript
+class Person {
+    constructor(name, age, gender, friend) {
+            this.name = name
+            this.age = age
+            this.gender = gender
+            this.friend = friend
+        }
+        [Symbol.iterator]() {
+            const entries = Object.entries(this)
+            let index = 0
+            return {
+                next: () => {
+                    if (index < entries.length) {
+                        return {
+                            value: entries[index++],
+                            done: false
+                        }
+                    } else {
+                        return {
+                            value: undefined,
+                            done: true
+                        }
+                    }
+                },
+                return: () => { //中断检测
+                    console.log('迭代器中断了...');
+                    return {
+                        value: undefined,
+                        done: true
+                    }
+                }
+            }
+        }
+}
+const p1 = new Person('jack', 25, '男', ['rose', 'akman'])
+for (let item of p1) {
+    console.log(item);
+    const [key, value] = item
+    // if (key === 'gender') break //return throw
+}
+```
+
+### 生成器函数的使用
+
+```javascript
+function* foo(params1) {
+    console.log(111, params1);
+    console.log(222, params1);
+    const params2 = yield console.log('aaa');
+    console.log(333, params2);
+    console.log(444, params2);
+    console.log(555, params2);
+    const params3 = yield 'bbb'
+    console.log(666, params3);
+    return 'ccc'
+}
+const generator = foo('next1')
+console.log(generator.next()); //{value:undefined,done:false}
+console.log(generator.next('next2')); //{value:'bbb',done:false}
+console.log(generator.next('next3')); //{value:'ccc',done:true}
+```
+
+### 生成器函数提前结束
+
+```javascript
+function* foo(params1) {
+    console.log(111, params1);
+    console.log(222, params1);
+    const params2 = yield console.log('aaa');
+    console.log(333, params2);
+    console.log(444, params2);
+    console.log(555, params2);
+    const params3 = yield 'bbb'
+    console.log(666, params3);
+    return 'ccc'
+}
+const generator = foo('next1')
+console.log(generator.next()); //{value:undefined,done:false}
+console.log(generator.return('next2')); //{value:'next2',done:true}
+// console.log(generator.throw(new Error('next2')));
+console.log('------------------------');
+console.log(generator.next('next3')); //{value:undefined,done:true}
+```
+
+### 生成器代替迭代器
+
+```javascript
+const names = ['jack', 'rose', 'akman']
+
+function* createItretaor(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        yield arr[i];
+    }
+}
+const namesItretaor = createItretaor(names)
+// console.log(namesItretaor.next());
+// console.log(namesItretaor.next());
+// console.log(namesItretaor.next());
+// console.log(namesItretaor.next());
+
+//生成器函数，可以生成某个范围的值
+function* createRangeGenerator(start, end) {
+    for (let i = start; i < end; i++) {
+        yield i
+    }
+}
+const rangeGen = createRangeGenerator(3, 7)
+console.log(rangeGen.next());
+```
+
+### 生成器yield语法糖
+
+```javascript
+function* foo(params1) {
+    console.log(111, params1);
+    console.log(222, params1);
+    const params2 = yield console.log('aaa');
+    console.log(333, params2);
+    console.log(444, params2);
+    console.log(555, params2);
+    const params3 = yield 'bbb'
+    console.log(666, params3);
+    return 'ccc'
+}
+const generator = foo('next1')
+console.log(generator.next()); //{value:undefined,done:false}
+console.log(generator.next('next2')); //{value:'bbb',done:false}
+console.log(generator.next('next3')); //{value:'ccc',done:true}
+```
+
+---
+参考视频：[coderwhy BV1TY411B71U](https://www.bilibili.com/video/BV1TY411B71U)
