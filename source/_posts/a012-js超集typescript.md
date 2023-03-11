@@ -1,11 +1,11 @@
 ---
-title: 了不起的typescript
+title: js超集typescript
 categories:
   - 前端学习
 tags:
   - typescript
 date: 2022-07-18 14:17:57
-index_img: https://img0.baidu.com/it/u=4167016203,3166254551&fm=253&fmt=auto&app=138&f=JPEG?w=499&h=311
+index_img: https://img2.baidu.com/it/u=1982552631,961573027&fm=253&fmt=auto&app=138&f=JPEG?w=1004&h=500
 ---
 
 ### 在webpack中使用ts
@@ -873,6 +873,4 @@ namespace second {
 
 ---
 中文文档：[typescript中文文档](https://www.tslang.cn/docs/home.html)
-
-
 参考视频：[BV14Z4y1u7pi](https://www.bilibili.com/video/BV14Z4y1u7pi?spm_id_from=333.999.0.0)  [BV1c34y1v7gi](https://www.bilibili.com/video/BV1c34y1v7gi/?spm_id_from=333.788)  [BV1WR4y1J7Lc](https://www.bilibili.com/video/BV1WR4y1J7Lc?spm_id_from=333.999.0.0)
