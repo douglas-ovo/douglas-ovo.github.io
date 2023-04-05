@@ -7,7 +7,7 @@ tags:
 date: 2022-07-19 09:59:41
 index_img: https://img1.baidu.com/it/u=3545225878,2086373205&fm=253&fmt=auto&app=138&f=JPEG?w=450&h=236
 ---
-**版本答案`Hooks + react-router(v6) + reduxjs/toolkit`**
+**版本答案(22.07.19)`Hooks + react-router(v6) + reduxjs/toolkit`**
 
 ### react简介
 react将数据渲染为HTML视图的js库；vue是毛坯房

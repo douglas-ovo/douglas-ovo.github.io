@@ -7,7 +7,7 @@ tags:
 date: 2022-07-20 11:43:01
 index_img: https://img2.baidu.com/it/u=1405034453,4094362351&fm=253&fmt=auto&app=138&f=JPEG?w=1000&h=500
 ---
-**版本答案`<script setup> + typescript + vite + vloar + pinia`**
+**版本答案（22.07.20）`<script setup> + typescript + vite + vloar + pinia`**
 
 ### vue3项目目录
 主入口文件main.ts
