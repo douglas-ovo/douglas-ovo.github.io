@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 道格拉斯                          # 网站的标题，可能用在各种布局的页面中
+title: Σ(っ °Д °;)っ                         # 网站的标题，可能用在各种布局的页面中
 subtitle:                                 # 网站子标题
 description:                              # 网站的描述性
 keywords:                                 # 网站的关键字
@@ -90,5 +90,5 @@ theme: fluid                               #当前主题名称。值为false时�
 # Deployment
 deploy:                                   #部署部分的设置
   type: 'git'
-  repo: https://github.com/douglas-ovo/douglas-ovo.github.io.git
+  repo: git@github.com:douglas-ovo/douglas-ovo.github.io.git
   branch: 'server'
