@@ -9,7 +9,7 @@ date: 2022-08-16 15:15:52
 index_img: 'https://img2.baidu.com/it/u=2198457933,2948913030&fm=253&fmt=auto&app=138&f=PNG?w=640&h=380'
 ---
 ### 效果
-<img src="/img/sample/a016/a016.gif" alt="">
+<img src="https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a016/a016.1hrz2q8o5t.gif" alt="">
 
 ### 依赖版本
 1. package.json
