@@ -1,0 +1,889 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/info/avatar.jpg">
+  <link rel="icon" href="/img/info/avatar.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="天外边">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="不同形式的移动客户端 H5  原生App  基于App的二级生态    公众号  小程序    各部分组成 App    是一个全局对象，代表整个小程序，有且只有一个   app.js    监听app的生命周期，存储全局数据                                             是否必须(否)   app.wxss  全局样式配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小程序开发">
+<meta property="og:url" content="https://tianwaibian.github.io/2022/09/09/a017-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/index.html">
+<meta property="og:site_name" content="ᶘ ᵒᴥᵒᶅ">
+<meta property="og:description" content="不同形式的移动客户端 H5  原生App  基于App的二级生态    公众号  小程序    各部分组成 App    是一个全局对象，代表整个小程序，有且只有一个   app.js    监听app的生命周期，存储全局数据                                             是否必须(否)   app.wxss  全局样式配置">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img0.baidu.com/it/u=3039994811,3905706414&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=338">
+<meta property="article:published_time" content="2022-09-09T07:57:01.000Z">
+<meta property="article:modified_time" content="2024-03-21T07:08:35.478Z">
+<meta property="article:author" content="天外边">
+<meta property="article:tag" content="小程序">
+<meta property="article:tag" content="云开发">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://img0.baidu.com/it/u=3039994811,3905706414&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=338">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>小程序开发 - ᶘ ᵒᴥᵒᶅ</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"tianwaibian.github.io","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 50vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>天外边</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/info/post.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="小程序开发"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        天外边
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-09-09 15:57" pubdate>
+          2022年9月9日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          23 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">小程序开发</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="不同形式的移动客户端"><a href="#不同形式的移动客户端" class="headerlink" title="不同形式的移动客户端"></a>不同形式的移动客户端</h3><ol>
+<li><p>H5</p>
+</li>
+<li><p>原生App</p>
+</li>
+<li><p>基于App的二级生态</p>
+<blockquote>
+<p>  公众号<br>  小程序</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="各部分组成"><a href="#各部分组成" class="headerlink" title="各部分组成"></a>各部分组成</h3><ol>
+<li><p>App</p>
+<blockquote>
+<p>  是一个全局对象，代表整个小程序，有且只有一个</p>
+<p>  app.js    监听app的生命周期，存储全局数据                                             是否必须(否)</p>
+<p>  app.wxss  全局样式配置                                                                是否必须(否)</p>
+<p>  app.json  pages注册，必须注册pages，至少一个；window窗口；导航栏；tabbar选项卡等         是否必须(是)</p>
+</blockquote>
+</li>
+<li><p>Page</p>
+<blockquote>
+<p>  用户所看到的一整个页面</p>
+<p>  page.js   监听page的生命周期，页面数据，页面逻辑                                      是否必须(是)</p>
+<p>  page.wxml 页面结构，数据渲染，事件绑定                                                是否必须(是)</p>
+<p>  page.wxss 页面样式                                                                    是否必须(否)</p>
+<p>  page.json component注册，导航栏，上下拉刷新等                                            是否必须(否)</p>
+</blockquote>
+</li>
+<li><p>Component</p>
+<blockquote>
+<p>  组成页面的一小部分</p>
+<p>  component.js      组件数据，组件逻辑                                                  是否必须(是)</p>
+<p>  component.wxml    数据渲染，事件绑定                                                  是否必须(是)</p>
+<p>  component.wxss    组件样式                                                             是否必须(否)</p>
+<p>  component.json    组件设置”component”: true；组件注册                                   是否必须(否)</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>小程序开发不需要依赖其他的库或自己写功能，好多功能都有自带的配置</p>
+<ol>
+<li><p>项目开发配置</p>
+<blockquote>
+<p>  project.config.json</p>
+<p>  也可以通过可视化界面设置：开发工具右上角 &#x3D;&gt; 详情 &#x3D;&gt; 本地设置</p>
+</blockquote>
+</li>
+<li><p>小程序收录配置</p>
+<blockquote>
+<p>  <a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/sitemap.html">sitemap.json</a></p>
+<p>  微信小程序在20190329推出了sitemap功能</p>
+<p>  将会默认收录所有小程序的页面内容，用于微信搜索场景。类似于网站的SEO</p>
+<p>  这意味着开发者的小程序曝光率的增加</p>
+</blockquote>
+</li>
+<li><p>全局配置</p>
+<blockquote>
+<p>  <a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/app.html">app.json</a></p>
+<p>  对小程序进行全局配置</p>
+<p>  决定页面路径；窗口表现；设置网络超时时间等。重点掌握window|pages|tabBar</p>
+</blockquote>
+</li>
+<li><p>页面配置</p>
+<blockquote>
+<p>  <a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/page.html">page.json</a></p>
+<p>  对小程序单个页面生效</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="WXML"><a href="#WXML" class="headerlink" title="WXML"></a>WXML</h3><ol>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/data.html">数据绑定</a></p>
+<blockquote>
+<p>  数据绑定使用 Mustache 语法（双大括号）将变量包起来</p>
+<p>  <code>&#123;&#123;&#125;&#125;</code>中只能写表达式，不能写代码。同vue和react</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/conditional.html">条件渲染</a></p>
+<blockquote>
+<p>  <code>&lt;block/&gt;</code> 并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性。</p>
+<p>  hidden  组件始终会被渲染，只是简单的控制显示与隐藏。</p>
+<p>  wx:if 有更高的切换消耗而 hidden 有更高的初始渲染消耗</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/list.html">列表渲染</a></p>
+<blockquote>
+<p>  wx:key 默认为index</p>
+<p>  wx:key 的值以两种形式提供<br>  字符串，代表在 for 循环的 array 中 item 的某个 property，该 property 的值需要是列表中唯一的字符串或数字，且不能动态改变。<br>  保留关键字 *this 代表在 for 循环中的 item 本身，这种表示需要 item 本身是一个唯一的字符串或者数字。</p>
+<p>  setData 数据更新并触发视图更新，增量式更新。同react</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html">事件绑定</a></p>
+<blockquote>
+<p>  事件是视图层到逻辑层的通讯方式</p>
+<p>  事件对象可以携带额外的参数，如id、dataset、touches。</p>
+<p>  target，触发事件的源组件。<br>  currentTarget，事件绑定的当前组件。</p>
+<p>  从外到内传递(找到目标元素)的过程称为捕获，从内到外处理(事件处理)的过程称为冒泡。</p>
+<p>  touches，表示当前停留在屏幕上的触摸点。<br>  changedTouches， 表示有变化的触摸点。</p>
+<p>  除 bind 外，也可以用 catch 来绑定事件。与 bind 不同， catch 会阻止事件向上冒泡。</p>
+<p>  需要在捕获阶段监听事件时，可以采用capture-bind。capture-catch关键字，将中断捕获阶段和取消冒泡阶段。</p>
+<p>  互斥事件绑定，mut-bind</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/template.html">模板</a></p>
+<blockquote>
+<p>  WXML提供模板（template），可以在模板中定义代码片段，然后在不同的地方调用。</p>
+<p>  可以理解为只能渲染的组件，没有自己的对应js和css文件。使用场景不多</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/reference/wxml/import.html">引用</a></p>
+<blockquote>
+<p>  import可以在该文件中使用目标文件定义的template</p>
+<p>  include 可以将目标文件除了 <code>&lt;template/&gt;</code> <code>&lt;wxs/&gt;</code> 外的整个代码引入，相当于是拷贝到 include 位置</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="WXS"><a href="#WXS" class="headerlink" title="WXS"></a>WXS</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxs/">文档</a></li>
+<li>写一些函数，辅助做一些渲染层的数据处理 </li>
+<li>可以在渲染层主动调用方法，例如格式化日期、截取字符串</li>
+</ol>
+<h3 id="WXSS"><a href="#WXSS" class="headerlink" title="WXSS"></a>WXSS</h3><ol>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxss.html">文档</a></p>
+<blockquote>
+<p>  全局样式app.wxss，可以作用于页面，但不能作用于组件</p>
+</blockquote>
+</li>
+<li><p>尺寸单位rpx</p>
+<blockquote>
+<p>  所有设备类型的宽度都为750rpx</p>
+<p>   以iPhone6 作为视觉稿的标准，1px &#x3D; 2rpx</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/platform-capabilities/extended/weui/">weUI</a></p>
+ <figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs livescript"><span class="hljs-built_in">npm</span> init -y<br><span class="hljs-built_in">npm</span> i weui-miniprogram<br>左上角工具 =&gt; 构建<span class="hljs-built_in">npm</span><br>app.wxss 里面引入 weui.wxss<br>page.json 中引入组件 =&gt; 页面中使用组件<br></code></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h3><ol>
+<li><p>text组件，用于展示文本，内部只能嵌套text组件</p>
+</li>
+<li><p>背景图使用FeHelper将图片转换成base64编码格式</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/component/swiper.html">swiper</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/component/movable-area.html">movable-area</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/component/scroll-view.html">scroll-view</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/">自定义组件</a></p>
+</li>
+</ol>
+<h3 id="生命周期、路由、API"><a href="#生命周期、路由、API" class="headerlink" title="生命周期、路由、API"></a>生命周期、路由、API</h3><ol>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/reference/api/App.html">App生命周期</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/reference/api/Page.html">Page生命周期</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/lifetimes.html">Component生命周期</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/route.html">页面路由</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/api/">API</a></p>
+<blockquote>
+<p>wx.request 接口请求</p>
+<ul>
+<li>生产环境：微信公众平台    &#x3D;&gt;  开发管理    &#x3D;&gt;  开发设置    &#x3D;&gt;  服务器域名中配置(需要支持https)</li>
+<li>开发环境：右上角详情   &#x3D;&gt;  本地设置    &#x3D;&gt;  不校验合法域名</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h3 id="云开发"><a href="#云开发" class="headerlink" title="云开发"></a>云开发</h3><ol>
+<li><p>不使用云开发<br>一门后端语言 + 购买服务器(只有ip) + 购买域名 + 购买证书(支持https)</p>
+</li>
+<li><p>使用云开发</p>
+<blockquote>
+<p>  在一个全部都已经部署好的环境中(云环境),直接以函数的形式使用各种服务(文件存储、数据库存储、计算处理、三方服务等)，完成各种操作。可以理解为前后端代码放在一块，可以直接调用</p>
+<p>  <a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/capabilities.html">云开发能力</a></p>
+<p>  云函数内部可以操作云存储、云数据库、云调用；HTTP API可以操作云存储、云数据库、云函数。    </p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/quickstart.html">云开发介绍</a></p>
+<blockquote>
+<p>  云环境和AppID是绑定的，会自动识别项目的AppID</p>
+<p>  云环境创建后名称不能修改</p>
+<p>  云环境最多创建两个(开发、发布)</p>
+</blockquote>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/database/init.html">云数据库</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/getting-started.html">云函数</a></p>
+</li>
+</ol>
+<ul>
+<li><p>云函数需要手动创建</p>
+</li>
+<li><p>已有项目中添加云函数功能</p>
+<blockquote>
+<p>  项目中用两个文件夹区分 项目文件(除projec.config.json) 云函数</p>
+<p>  并在projec.config.json中添加，<code>&quot;miniprogramRoot&quot;: &quot;app/&quot;</code>，<code>&quot;cloudfunctionRoot&quot;: &quot;appFunc/&quot;</code></p>
+</blockquote>
+</li>
+<li><p>新建项目中添加云函数功能</p>
+<blockquote>
+<p>  创建项目时勾选使用云开发，即可自动创建相应目录，并包含相关测试云函数</p>
+</blockquote>
+</li>
+<li><p>API分类</p>
+<blockquote>
+<p>  小程序端调用、服务端调用(云函数中调用)</p>
+</blockquote>
+</li>
+<li><p>使用</p>
+<blockquote>
+<p>  axios使用会报错，建议使用request-promise</p>
+<p>  每次修改函数内容，都需要重新上传和部署；或者右键点击函数的index.js，选择增量式更新</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p>参考文档:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/structure.html">微信官方文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/">微信公众平台</a></li>
+</ul>
+<p>参考视频:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1YJ411W7YA">BV1YJ411W7YA</a></li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/" class="category-chain-item">前端学习</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">#小程序</a>
+      
+        <a href="/tags/%E4%BA%91%E5%BC%80%E5%8F%91/">#云开发</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>小程序开发</div>
+      <div>https://tianwaibian.github.io/2022/09/09/a017-小程序开发/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>天外边</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年9月9日</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>许可协议</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/12/08/a018-h5%E5%AE%9E%E7%8E%B0%E6%8B%96%E6%8B%BD%E6%8E%92%E5%BA%8F/" title="h5实现拖拽排序">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">h5实现拖拽排序</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/08/16/a016-vue-swiper%E5%AE%9E%E7%8E%B0%E5%BC%B9%E5%B9%95%E6%BB%9A%E5%8A%A8%E6%95%88%E6%9E%9C/" title="vue+swiper实现弹幕滚动效果">
+                        <span class="hidden-mobile">vue+swiper实现弹幕滚动效果</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  <article id="comments" lazyload>
+    
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.4.17/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"tkrME4FsxymgJjqFAHXfcmAB-gzGzoHsz","appKey":"9E4sgGJeaAk32ALJUgUys0pC","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
