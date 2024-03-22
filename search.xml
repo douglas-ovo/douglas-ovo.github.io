@@ -1,65 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>优雅的markdown</title>
-    <url>/2022/07/06/a002-%E4%BC%98%E9%9B%85%E7%9A%84markdown/</url>
-    <content><![CDATA[<h3 id="创建标题"><a href="#创建标题" class="headerlink" title="创建标题"></a>创建标题</h3><p>格式：#+空格+名称 ，最后回车。实现标题的添加，不同的#数量对应不同的标题，一级标题一个，二级两个类推。</p>
-<h3 id="字体设置"><a href="#字体设置" class="headerlink" title="字体设置"></a>字体设置</h3><ol>
-<li><p>加粗<br><strong>字体</strong>左右两边加两个*</p>
-</li>
-<li><p>斜体<br><em>字体</em>左右两边加一个*</p>
-</li>
-<li><p>删除线<br><del>字体</del>左右两边加两个波浪线~</p>
-</li>
-</ol>
-<h3 id="添加引用"><a href="#添加引用" class="headerlink" title="添加引用"></a>添加引用</h3><blockquote>
-<p>是通过大于号&gt;+ 空格，文字最后回车</p>
-</blockquote>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>三个- 或三个*</p>
-<h3 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h3><p>![自己起的图片名称]+(),可以在括号里添加本地图片或网络图片<br><img src="https://csfile.ossxrcloud.net/ydnImg/200X200/802dac9a93084_1641346280372.png" alt="实例"></p>
-<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>[名称]+()，括号里面添加1的网址<br><a href="https://markdown.com.cn/">实例</a></p>
-<h3 id="添加列表"><a href="#添加列表" class="headerlink" title="添加列表"></a>添加列表</h3><h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><p>1+点号（英文输入法）+空格</p>
-<ol>
-<li>a</li>
-<li>b</li>
-</ol>
-<h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>*或+或- 加空格</p>
-<ul>
-<li>a</li>
-<li>b</li>
-</ul>
-<h3 id="添加表格"><a href="#添加表格" class="headerlink" title="添加表格"></a>添加表格</h3><p>竖杠</p>
-<table>
-<thead>
-<tr>
-<th>名字</th>
-<th>性别</th>
-<th>生日</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>s1xpences</td>
-<td>男</td>
-<td>18</td>
-</tr>
-</tbody></table>
-<h3 id="添加代码块"><a href="#添加代码块" class="headerlink" title="添加代码块"></a>添加代码块</h3><p>代码片段<br>一个<code>或者两个</code>包裹</p>
-<p><code>测试</code></p>
-<p><code>测试测试</code></p>
-<p>代码块<br>三个&#96;+语言</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> a = <span class="hljs-string">&#x27;0.0&#x27;</span><br></code></pre></td></tr></table></figure>
-
-<hr>
-<p>官方文档：<a href="https://markdown.com.cn/">markdown</a></p>
-]]></content>
-      <categories>
-        <category>前端学习</category>
-      </categories>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo+git搭建个人博客</title>
     <url>/2022/07/01/a001-hexo+git%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><ol>
@@ -129,103 +70,62 @@
       </tags>
   </entry>
   <entry>
-    <title>常用的git命令</title>
-    <url>/2022/07/07/a004-%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h3 id="github-访问慢？"><a href="#github-访问慢？" class="headerlink" title="github 访问慢？"></a>github 访问慢？</h3><ol>
-<li>使用 dns 查询工具，查询 github.com，将 TTL 最小的 ip 复制</li>
-<li>找到对应路径 C:\Windows\System32\drivers\etc 下的 hosts 文件<br><img src="https://img-blog.csdnimg.cn/2021042623563665.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYwODc0NA==,size_16,color_FFFFFF,t_70#pic_center" alt="图示"></li>
-</ol>
-<h3 id="本地信息配置"><a href="#本地信息配置" class="headerlink" title="本地信息配置"></a>本地信息配置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git config --global --list<br>git config --global user.name<br>git config --global user.email<br></code></pre></td></tr></table></figure>
-
-<h3 id="SSH-配置"><a href="#SSH-配置" class="headerlink" title="SSH 配置"></a>SSH 配置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">ssh-keygen -t rsa -C &#x27;xxx@xxx.com&#x27;<br></code></pre></td></tr></table></figure>
-
-<blockquote>
-<p>公钥路径：C:&#x2F;Users&#x2F;Administrator&#x2F;.ssh&#x2F;id_rsa.pub<br>验证 ssh 是否生效：ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#46;&#x63;&#x6f;&#x6d;">&#103;&#105;&#x74;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#46;&#x63;&#x6f;&#x6d;</a></p>
-</blockquote>
-<h3 id="提交注释"><a href="#提交注释" class="headerlink" title="提交注释"></a>提交注释</h3><p>feat: 增加新功能（feature）<br>fix:  修改bug<br>perf: 改进，性能优化<br>docs: 文档（documentation）<br>style: 空白&#x2F;格式&#x2F;缺少符号等（不影响代码运行的变动）<br>refactor: 重构（即不是新增功能，也不是修改 bug 的代码变动）<br>chore: 构建过程或辅助工具的变动<br>revert: 撤销，版本回退<br>test：测试<br>build: 打包  </p>
-<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git branch -avv<br>git branch -vv<br>git remote -vv<br>git diff<br>git log --oneline<br>git checkout xxx      或  git switch xxx<br>git checkout -b xxx   或  git switch -c xxx<br></code></pre></td></tr></table></figure>
-
-<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">files change...<br>git pull<br>git add .<br>git commit -m &#x27;xxx&#x27;<br>git push<br></code></pre></td></tr></table></figure>
-
-<h3 id="创建新工作区并推送到远程仓库"><a href="#创建新工作区并推送到远程仓库" class="headerlink" title="创建新工作区并推送到远程仓库"></a>创建新工作区并推送到远程仓库</h3><ol>
-<li>由自己创建仓库</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git init<br>git add .<br>git commit -m &#x27;xxx&#x27;<br>git branch -M main                     //重命名当前本地分支，初始分支名为master<br>git remote add origin git@xxxx.git     //origin为远程仓库名，可以自定义<br>git push origin -u main:master         //main为本地分支名，master为远程分支名，之后push需要指定远程仓库名<br>或<br>git push origin -u master              //本地分支名和远程分支名一样，之后可直接push，本地分支名和远程分支名尽量保持一样<br></code></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>由别人创建仓库</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git clone  git@xxxx.git                //克隆默认分支，克隆后本地默认与指定远程分支建立联系<br>或<br>git clone -b xxx git@xxxx.git          //克隆其他分支，克隆后本地默认与指定远程分支建立联系<br></code></pre></td></tr></table></figure>
-
-<h3 id="新建分支并推送远程仓库的对应分支"><a href="#新建分支并推送远程仓库的对应分支" class="headerlink" title="新建分支并推送远程仓库的对应分支"></a>新建分支并推送远程仓库的对应分支</h3><blockquote>
-<p><strong>分支是用来开发不同功能的</strong></p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git checkout -b 新分支名<br>git push origin -u dev<br></code></pre></td></tr></table></figure>
-
-<h3 id="分支重命名"><a href="#分支重命名" class="headerlink" title="分支重命名"></a>分支重命名</h3><ol>
-<li>本地分支</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git branch -m 原分支名称 新分支名称<br></code></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>远程分支</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git push origin -d 自己的原分支名称<br>git push origin -u 新分支名称<br></code></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>重命名分支为远程默认分支时<blockquote>
-<p>github 打开当前仓库——&gt;settings——&gt;branches——&gt;手动重命名</p>
-</blockquote>
+    <title>优雅的markdown</title>
+    <url>/2022/07/06/a002-%E4%BC%98%E9%9B%85%E7%9A%84markdown/</url>
+    <content><![CDATA[<h3 id="创建标题"><a href="#创建标题" class="headerlink" title="创建标题"></a>创建标题</h3><p>格式：#+空格+名称 ，最后回车。实现标题的添加，不同的#数量对应不同的标题，一级标题一个，二级两个类推。</p>
+<h3 id="字体设置"><a href="#字体设置" class="headerlink" title="字体设置"></a>字体设置</h3><ol>
+<li><p>加粗<br><strong>字体</strong>左右两边加两个*</p>
+</li>
+<li><p>斜体<br><em>字体</em>左右两边加一个*</p>
+</li>
+<li><p>删除线<br><del>字体</del>左右两边加两个波浪线~</p>
 </li>
 </ol>
-<h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git branch -d 本地分支名<br>git push origin -d 远程分支名<br></code></pre></td></tr></table></figure>
-
-<h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><blockquote>
-<p>切换到合并分支，合并其他工作树干净的分支</p>
+<h3 id="添加引用"><a href="#添加引用" class="headerlink" title="添加引用"></a>添加引用</h3><blockquote>
+<p>是通过大于号&gt;+ 空格，文字最后回车</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git merge 被合并分支名<br></code></pre></td></tr></table></figure>
-
-<h3 id="拉取远程新的分支并与本地建立连接"><a href="#拉取远程新的分支并与本地建立连接" class="headerlink" title="拉取远程新的分支并与本地建立连接"></a>拉取远程新的分支并与本地建立连接</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git checkout -b 本地分支名 origin/远程分支名<br>files change...<br>git add .<br>git commit -m &#x27;xxx&#x27;<br>git push<br><br>或<br><br>git fetch origin 远程分支名:本地分支名<br>git switch 本地分支名<br>files change...<br>git add .<br>git commit -m &#x27;xxx&#x27;<br>git push origin -u 远程分支名<br></code></pre></td></tr></table></figure>
-
-<h3 id="移除工作区修改"><a href="#移除工作区修改" class="headerlink" title="移除工作区修改"></a>移除工作区修改</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git checkout .<br><br>或<br><br>git checkout 文件路径<br></code></pre></td></tr></table></figure>
-
-<h3 id="取消-add-操作"><a href="#取消-add-操作" class="headerlink" title="取消 add 操作"></a>取消 add 操作</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git reset<br></code></pre></td></tr></table></figure>
-
-<h3 id="取消-commit-操作"><a href="#取消-commit-操作" class="headerlink" title="取消 commit 操作"></a>取消 commit 操作</h3><p>之前提交过</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git reset --soft HEAD^     //仅撤销commit<br>git reset --mixed HEAD^    //撤销commit，add<br></code></pre></td></tr></table></figure>
-
-<p>第一次提交<br>删除.git文件夹重新提交</p>
-<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><ol>
-<li>版本回退<blockquote>
-<p>不会破坏之前的版本</p>
-</blockquote>
-</li>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>三个- 或三个*</p>
+<h3 id="添加图片"><a href="#添加图片" class="headerlink" title="添加图片"></a>添加图片</h3><p>![自己起的图片名称]+(),可以在括号里添加本地图片或网络图片<br><img src="https://csfile.ossxrcloud.net/ydnImg/200X200/802dac9a93084_1641346280372.png" alt="实例"></p>
+<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>[名称]+()，括号里面添加1的网址<br><a href="https://markdown.com.cn/">实例</a></p>
+<h3 id="添加列表"><a href="#添加列表" class="headerlink" title="添加列表"></a>添加列表</h3><h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><p>1+点号（英文输入法）+空格</p>
+<ol>
+<li>a</li>
+<li>b</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git reset --hard commitid<br>files change...<br>git add .<br>git commit -m &#x27;xxx&#x27;<br>git push<br>git pull 解决冲突<br></code></pre></td></tr></table></figure>
-
-<blockquote>
-<p>会破坏之前的版本</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git reset --hard commitid<br>git push -f<br></code></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>切换新分支指向想要回退的版本</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git checkout -b 分支名 commitid<br></code></pre></td></tr></table></figure>
-
-<h3 id="tag"><a href="#tag" class="headerlink" title="tag"></a>tag</h3><blockquote>
-<p><strong>tag 是用来记录版本的</strong><br>tag 给当前仓库 commitid 记录对应的版本信息，之后可以根据 tag 找到版本对应的 commitid 进行版本控制<br>开发完新功能后将功能分支合并到主分支，之后打 tag，一般只用给主分支打 tag</p>
-</blockquote>
-<figure class="highlight crmsh"><table><tr><td class="code"><pre><code class="hljs crmsh">git <span class="hljs-keyword">tag</span> <span class="hljs-title">xxx</span>                            //给最近的commitid打<span class="hljs-keyword">tag</span>，当前未提交则为上次commitid打<span class="hljs-keyword">tag</span>，当前已提交则为本次commitid打<span class="hljs-keyword">tag</span><br><span class="hljs-title">git</span> <span class="hljs-keyword">tag</span> <span class="hljs-title">xxx</span> commitid                   //给指定的commitid打<span class="hljs-keyword">tag</span><br><span class="hljs-title">git</span> <span class="hljs-keyword">tag</span> <span class="hljs-title">xxx</span> -m <span class="hljs-string">&quot;注释&quot;</span> commitid         //给指定的commitid打<span class="hljs-keyword">tag</span>同时添加注释<br>git push origin xxx                    //将本地<span class="hljs-keyword">tag</span>推送到远程<br>git push origin --<span class="hljs-keyword">tag</span>                  <span class="hljs-title">//本地所有tag</span>推送到远程<br>git <span class="hljs-keyword">tag</span> <span class="hljs-title">-d</span> xxx                        //删除本地<span class="hljs-keyword">tag</span>，删除本地后git pull会将远程的<span class="hljs-keyword">tag</span>拉下来<br>git push origin -d xxx                 //删除远程<span class="hljs-keyword">tag</span><br><span class="hljs-title">git</span> show xxx                           //查看对应<span class="hljs-keyword">tag</span>提交信息<br>git <span class="hljs-keyword">tag</span>                                <span class="hljs-title">//查看本地所有tag</span><br>git ls-remote --<span class="hljs-keyword">tag</span>                    <span class="hljs-title">//查看远程所有tag</span><br></code></pre></td></tr></table></figure>
+<h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>*或+或- 加空格</p>
+<ul>
+<li>a</li>
+<li>b</li>
+</ul>
+<h3 id="添加表格"><a href="#添加表格" class="headerlink" title="添加表格"></a>添加表格</h3><p>竖杠</p>
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>性别</th>
+<th>生日</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>s1xpences</td>
+<td>男</td>
+<td>18</td>
+</tr>
+</tbody></table>
+<h3 id="添加代码块"><a href="#添加代码块" class="headerlink" title="添加代码块"></a>添加代码块</h3><p>代码片段<br>一个<code>或者两个</code>包裹</p>
+<p><code>测试</code></p>
+<p><code>测试测试</code></p>
+<p>代码块<br>三个&#96;+语言</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> a = <span class="hljs-string">&#x27;0.0&#x27;</span><br></code></pre></td></tr></table></figure>
 
 <hr>
-<p>官方文档：<a href="https://git-scm.com/book/zh/v2">Git</a></p>
+<p>官方文档：<a href="https://markdown.com.cn/">markdown</a></p>
 ]]></content>
       <categories>
         <category>前端学习</category>
       </categories>
       <tags>
-        <tag>Git</tag>
+        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -338,6 +238,106 @@
       </categories>
       <tags>
         <tag>网站大全</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用的git命令</title>
+    <url>/2022/07/07/a004-%E5%B8%B8%E7%94%A8%E7%9A%84git%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h3 id="github-访问慢？"><a href="#github-访问慢？" class="headerlink" title="github 访问慢？"></a>github 访问慢？</h3><ol>
+<li>使用 dns 查询工具，查询 github.com，将 TTL 最小的 ip 复制</li>
+<li>找到对应路径 C:\Windows\System32\drivers\etc 下的 hosts 文件<br><img src="https://img-blog.csdnimg.cn/2021042623563665.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYwODc0NA==,size_16,color_FFFFFF,t_70#pic_center" alt="图示"></li>
+</ol>
+<h3 id="本地信息配置"><a href="#本地信息配置" class="headerlink" title="本地信息配置"></a>本地信息配置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git config --global --list<br>git config --global user.name<br>git config --global user.email<br></code></pre></td></tr></table></figure>
+
+<h3 id="SSH-配置"><a href="#SSH-配置" class="headerlink" title="SSH 配置"></a>SSH 配置</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">ssh-keygen -t rsa -C &#x27;xxx@xxx.com&#x27;<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>公钥路径：C:&#x2F;Users&#x2F;Administrator&#x2F;.ssh&#x2F;id_rsa.pub<br>验证 ssh 是否生效：ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#x6f;&#109;">&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#x6f;&#109;</a></p>
+</blockquote>
+<h3 id="提交注释"><a href="#提交注释" class="headerlink" title="提交注释"></a>提交注释</h3><p>feat: 增加新功能（feature）<br>fix:  修改bug<br>perf: 改进，性能优化<br>docs: 文档（documentation）<br>style: 空白&#x2F;格式&#x2F;缺少符号等（不影响代码运行的变动）<br>refactor: 重构（即不是新增功能，也不是修改 bug 的代码变动）<br>chore: 构建过程或辅助工具的变动<br>revert: 撤销，版本回退<br>test：测试<br>build: 打包  </p>
+<h3 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git branch -avv<br>git branch -vv<br>git remote -vv<br>git diff<br>git log --oneline<br>git checkout xxx      或  git switch xxx<br>git checkout -b xxx   或  git switch -c xxx<br></code></pre></td></tr></table></figure>
+
+<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">files change...<br>git pull<br>git add .<br>git commit -m &#x27;xxx&#x27;<br>git push<br></code></pre></td></tr></table></figure>
+
+<h3 id="创建新工作区并推送到远程仓库"><a href="#创建新工作区并推送到远程仓库" class="headerlink" title="创建新工作区并推送到远程仓库"></a>创建新工作区并推送到远程仓库</h3><ol>
+<li>由自己创建仓库</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git init<br>git add .<br>git commit -m &#x27;xxx&#x27;<br>git branch -M main                     //重命名当前本地分支，初始分支名为master<br>git remote add origin git@xxxx.git     //origin为远程仓库名，可以自定义<br>git push origin -u main:master         //main为本地分支名，master为远程分支名，之后push需要指定远程仓库名<br>或<br>git push origin -u master              //本地分支名和远程分支名一样，之后可直接push，本地分支名和远程分支名尽量保持一样<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>由别人创建仓库</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git clone  git@xxxx.git                //克隆默认分支，克隆后本地默认与指定远程分支建立联系<br>或<br>git clone -b xxx git@xxxx.git          //克隆其他分支，克隆后本地默认与指定远程分支建立联系<br></code></pre></td></tr></table></figure>
+
+<h3 id="新建分支并推送远程仓库的对应分支"><a href="#新建分支并推送远程仓库的对应分支" class="headerlink" title="新建分支并推送远程仓库的对应分支"></a>新建分支并推送远程仓库的对应分支</h3><blockquote>
+<p><strong>分支是用来开发不同功能的</strong></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git checkout -b 新分支名<br>git push origin -u dev<br></code></pre></td></tr></table></figure>
+
+<h3 id="分支重命名"><a href="#分支重命名" class="headerlink" title="分支重命名"></a>分支重命名</h3><ol>
+<li>本地分支</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git branch -m 原分支名称 新分支名称<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>远程分支</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git push origin -d 自己的原分支名称<br>git push origin -u 新分支名称<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>重命名分支为远程默认分支时<blockquote>
+<p>github 打开当前仓库——&gt;settings——&gt;branches——&gt;手动重命名</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git branch -d 本地分支名<br>git push origin -d 远程分支名<br></code></pre></td></tr></table></figure>
+
+<h3 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h3><blockquote>
+<p>切换到合并分支，合并其他工作树干净的分支</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git merge 被合并分支名<br></code></pre></td></tr></table></figure>
+
+<h3 id="拉取远程新的分支并与本地建立连接"><a href="#拉取远程新的分支并与本地建立连接" class="headerlink" title="拉取远程新的分支并与本地建立连接"></a>拉取远程新的分支并与本地建立连接</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git checkout -b 本地分支名 origin/远程分支名<br>files change...<br>git add .<br>git commit -m &#x27;xxx&#x27;<br>git push<br><br>或<br><br>git fetch origin 远程分支名:本地分支名<br>git switch 本地分支名<br>files change...<br>git add .<br>git commit -m &#x27;xxx&#x27;<br>git push origin -u 远程分支名<br></code></pre></td></tr></table></figure>
+
+<h3 id="移除工作区修改"><a href="#移除工作区修改" class="headerlink" title="移除工作区修改"></a>移除工作区修改</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git checkout .<br><br>或<br><br>git checkout 文件路径<br></code></pre></td></tr></table></figure>
+
+<h3 id="取消-add-操作"><a href="#取消-add-操作" class="headerlink" title="取消 add 操作"></a>取消 add 操作</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git reset<br></code></pre></td></tr></table></figure>
+
+<h3 id="取消-commit-操作"><a href="#取消-commit-操作" class="headerlink" title="取消 commit 操作"></a>取消 commit 操作</h3><p>之前提交过</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git reset --soft HEAD^     //仅撤销commit<br>git reset --mixed HEAD^    //撤销commit，add<br></code></pre></td></tr></table></figure>
+
+<p>第一次提交<br>删除.git文件夹重新提交</p>
+<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><ol>
+<li>版本回退<blockquote>
+<p>不会破坏之前的版本</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git reset --hard commitid<br>files change...<br>git add .<br>git commit -m &#x27;xxx&#x27;<br>git push<br>git pull 解决冲突<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>会破坏之前的版本</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git reset --hard commitid<br>git push -f<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>切换新分支指向想要回退的版本</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs git">git checkout -b 分支名 commitid<br></code></pre></td></tr></table></figure>
+
+<h3 id="tag"><a href="#tag" class="headerlink" title="tag"></a>tag</h3><blockquote>
+<p><strong>tag 是用来记录版本的</strong><br>tag 给当前仓库 commitid 记录对应的版本信息，之后可以根据 tag 找到版本对应的 commitid 进行版本控制<br>开发完新功能后将功能分支合并到主分支，之后打 tag，一般只用给主分支打 tag</p>
+</blockquote>
+<figure class="highlight crmsh"><table><tr><td class="code"><pre><code class="hljs crmsh">git <span class="hljs-keyword">tag</span> <span class="hljs-title">xxx</span>                            //给最近的commitid打<span class="hljs-keyword">tag</span>，当前未提交则为上次commitid打<span class="hljs-keyword">tag</span>，当前已提交则为本次commitid打<span class="hljs-keyword">tag</span><br><span class="hljs-title">git</span> <span class="hljs-keyword">tag</span> <span class="hljs-title">xxx</span> commitid                   //给指定的commitid打<span class="hljs-keyword">tag</span><br><span class="hljs-title">git</span> <span class="hljs-keyword">tag</span> <span class="hljs-title">xxx</span> -m <span class="hljs-string">&quot;注释&quot;</span> commitid         //给指定的commitid打<span class="hljs-keyword">tag</span>同时添加注释<br>git push origin xxx                    //将本地<span class="hljs-keyword">tag</span>推送到远程<br>git push origin --<span class="hljs-keyword">tag</span>                  <span class="hljs-title">//本地所有tag</span>推送到远程<br>git <span class="hljs-keyword">tag</span> <span class="hljs-title">-d</span> xxx                        //删除本地<span class="hljs-keyword">tag</span>，删除本地后git pull会将远程的<span class="hljs-keyword">tag</span>拉下来<br>git push origin -d xxx                 //删除远程<span class="hljs-keyword">tag</span><br><span class="hljs-title">git</span> show xxx                           //查看对应<span class="hljs-keyword">tag</span>提交信息<br>git <span class="hljs-keyword">tag</span>                                <span class="hljs-title">//查看本地所有tag</span><br>git ls-remote --<span class="hljs-keyword">tag</span>                    <span class="hljs-title">//查看远程所有tag</span><br></code></pre></td></tr></table></figure>
+
+<hr>
+<p>官方文档：<a href="https://git-scm.com/book/zh/v2">Git</a></p>
+]]></content>
+      <categories>
+        <category>前端学习</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -556,6 +556,59 @@
       </tags>
   </entry>
   <entry>
+    <title>数据请求之axios</title>
+    <url>/2022/07/15/a009-%E6%95%B0%E6%8D%AE%E8%AF%B7%E6%B1%82%E4%B9%8Baxios/</url>
+    <content><![CDATA[<h3 id="数据请求的特点"><a href="#数据请求的特点" class="headerlink" title="数据请求的特点"></a>数据请求的特点</h3><p><strong>1. 无刷新更新数据</strong></p>
+<p><strong>2. 异步与服务器通信</strong></p>
+<p><strong>3. 前端和后端负载平衡</strong></p>
+<p><strong>4. 基于、支持标准</strong></p>
+<p><strong>5. 界面与应用分离</strong></p>
+<h3 id="什么是axios"><a href="#什么是axios" class="headerlink" title="什么是axios"></a>什么是axios</h3><p>axios是基于promise的http客户端，可以在浏览器(发送AJAX)和node(发送http请求)环境中运行<br>axios的执行结果返回是一个promise对象</p>
+<h3 id="响应结果结构"><a href="#响应结果结构" class="headerlink" title="响应结果结构"></a>响应结果结构</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&#123;config,data,headers,request,status,statusTxt&#125;<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>config：发送请求的配置对象<br>data：响应体的结果，axios自动进行了json解析<br>headers：响应头信息<br>request：原生的ajax请求对象<br>status：响应状态码<br>statusTxt：响应状态字符串</p>
+</blockquote>
+<h3 id="请求配置对象"><a href="#请求配置对象" class="headerlink" title="请求配置对象"></a>请求配置对象</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&#123;url,method,baseURL,transformRequest,transformResponse,headers,params&#125;<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>transformRequest：对请求参数进行预处理<br>transformResponse：对响应结果进行预处理</p>
+</blockquote>
+<h3 id="实例对象"><a href="#实例对象" class="headerlink" title="实例对象"></a>实例对象</h3><p>实例对象的功能和axios的功能几近一样，使用时一般不会使用全局的axios<br>可以应用实例给不同的域名设置默认配置</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">axios.<span class="hljs-property">defaults</span>.<span class="hljs-property">baseURL</span><br><span class="hljs-keyword">const</span> duanzi = axios.<span class="hljs-title function_">create</span>(&#123;<span class="hljs-attr">baseURL</span>:<span class="hljs-string">&#x27;http://b.com&#x27;</span>&#125;)<br></code></pre></td></tr></table></figure>
+<h3 id="拦截器"><a href="#拦截器" class="headerlink" title="拦截器"></a>拦截器</h3><blockquote>
+<p>拦截器类似于promise.prototype.then(成功回调，失败回调)<br>请求拦截器config：可以对请求参数进行处理<br>响应拦截器response：可以对响应结果进行处理<br>请求拦截器使用场景：</p>
+<ul>
+<li>config中的信息不符合服务器的要求，需要更改时</li>
+<li>每次发送网络请求希望界面显示请求图标时(转圈效果)</li>
+<li>某些网络请求(比如登录需要携带token)，必须携带一些特殊信息时</li>
+</ul>
+</blockquote>
+<h3 id="网络模块的选择"><a href="#网络模块的选择" class="headerlink" title="网络模块的选择"></a>网络模块的选择</h3><blockquote>
+<p>原生Ajax<br>特点：基于XMLHttpRequert，配置和调用非常混乱</p>
+<p>fetch<br>特点：低层次的API，类似于原生的XHR，需要进行封装</p>
+<p>jquery-Ajax<br>特点：Jqury代码1W+行，为了使用$ajax下载jquery大可不必</p>
+<p>vue-resource<br>特点：支持vue1.x，不支持新版本，官方也不再推荐使用</p>
+<p>axios<br>特点：本身是一个promise对象</p>
+</blockquote>
+<h3 id="跨域设置"><a href="#跨域设置" class="headerlink" title="跨域设置"></a>跨域设置</h3><p>接口示例：<a href="http://123.207.32.32:8000/home/multidata">coderwhy的接口</a></p>
+<p>这里以vue为例：<br>跨域设置本地服务器需要加上协议，如target:”<a href="http://localhost:3000&quot;">http://localhost:3000&quot;</a><br>axios在解析域名时先在遇到&#x2F;api前缀在其前加target后将&#x2F;api转换为pathRewrite中对应的内容</p>
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><blockquote>
+<p>取消请求使用配置对象canceltoken属性</p>
+<p>axios发送并发请求axios.all(类似于Promise.all),并可使用axios.spread展开结果的数组</p>
+<p>不传method默认get请求，get请求是通过query传递参数的,axios中是params；post是通过requesbody传递参数,axios中是data</p>
+<p>axios的封装。不要在每一个组件中单独引用axios，万一axios不再维护需要另一个框架来替换的时候代码量太大</p>
+</blockquote>
+<hr>
+<p>中文文档：<a href="http://www.axios-js.com/zh-cn/docs/">中文文档</a></p>
+<p>参考视频：<br><a href="https://www.bilibili.com/video/BV1wr4y1K7tq?spm_id_from=333.999.0.0">BV1wr4y1K7tq</a>   <a href="https://www.bilibili.com/video/BV17j411f74d?p=141">BV17j411f74d</a></p>
+]]></content>
+      <categories>
+        <category>前端学习</category>
+      </categories>
+      <tags>
+        <tag>axios</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>信息与存储</title>
     <url>/2022/07/12/a008-%E4%BF%A1%E6%81%AF%E4%B8%8E%E5%AD%98%E5%82%A8/</url>
     <content><![CDATA[<h3 id="信息"><a href="#信息" class="headerlink" title="信息"></a>信息</h3><h4 id="cookies"><a href="#cookies" class="headerlink" title="cookies"></a>cookies</h4><ol>
@@ -681,59 +734,6 @@
         <tag>session</tag>
         <tag>token</tag>
         <tag>H5本地存储</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据请求之axios</title>
-    <url>/2022/07/15/a009-%E6%95%B0%E6%8D%AE%E8%AF%B7%E6%B1%82%E4%B9%8Baxios/</url>
-    <content><![CDATA[<h3 id="数据请求的特点"><a href="#数据请求的特点" class="headerlink" title="数据请求的特点"></a>数据请求的特点</h3><p><strong>1. 无刷新更新数据</strong></p>
-<p><strong>2. 异步与服务器通信</strong></p>
-<p><strong>3. 前端和后端负载平衡</strong></p>
-<p><strong>4. 基于、支持标准</strong></p>
-<p><strong>5. 界面与应用分离</strong></p>
-<h3 id="什么是axios"><a href="#什么是axios" class="headerlink" title="什么是axios"></a>什么是axios</h3><p>axios是基于promise的http客户端，可以在浏览器(发送AJAX)和node(发送http请求)环境中运行<br>axios的执行结果返回是一个promise对象</p>
-<h3 id="响应结果结构"><a href="#响应结果结构" class="headerlink" title="响应结果结构"></a>响应结果结构</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&#123;config,data,headers,request,status,statusTxt&#125;<br></code></pre></td></tr></table></figure>
-<blockquote>
-<p>config：发送请求的配置对象<br>data：响应体的结果，axios自动进行了json解析<br>headers：响应头信息<br>request：原生的ajax请求对象<br>status：响应状态码<br>statusTxt：响应状态字符串</p>
-</blockquote>
-<h3 id="请求配置对象"><a href="#请求配置对象" class="headerlink" title="请求配置对象"></a>请求配置对象</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&#123;url,method,baseURL,transformRequest,transformResponse,headers,params&#125;<br></code></pre></td></tr></table></figure>
-<blockquote>
-<p>transformRequest：对请求参数进行预处理<br>transformResponse：对响应结果进行预处理</p>
-</blockquote>
-<h3 id="实例对象"><a href="#实例对象" class="headerlink" title="实例对象"></a>实例对象</h3><p>实例对象的功能和axios的功能几近一样，使用时一般不会使用全局的axios<br>可以应用实例给不同的域名设置默认配置</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">axios.<span class="hljs-property">defaults</span>.<span class="hljs-property">baseURL</span><br><span class="hljs-keyword">const</span> duanzi = axios.<span class="hljs-title function_">create</span>(&#123;<span class="hljs-attr">baseURL</span>:<span class="hljs-string">&#x27;http://b.com&#x27;</span>&#125;)<br></code></pre></td></tr></table></figure>
-<h3 id="拦截器"><a href="#拦截器" class="headerlink" title="拦截器"></a>拦截器</h3><blockquote>
-<p>拦截器类似于promise.prototype.then(成功回调，失败回调)<br>请求拦截器config：可以对请求参数进行处理<br>响应拦截器response：可以对响应结果进行处理<br>请求拦截器使用场景：</p>
-<ul>
-<li>config中的信息不符合服务器的要求，需要更改时</li>
-<li>每次发送网络请求希望界面显示请求图标时(转圈效果)</li>
-<li>某些网络请求(比如登录需要携带token)，必须携带一些特殊信息时</li>
-</ul>
-</blockquote>
-<h3 id="网络模块的选择"><a href="#网络模块的选择" class="headerlink" title="网络模块的选择"></a>网络模块的选择</h3><blockquote>
-<p>原生Ajax<br>特点：基于XMLHttpRequert，配置和调用非常混乱</p>
-<p>fetch<br>特点：低层次的API，类似于原生的XHR，需要进行封装</p>
-<p>jquery-Ajax<br>特点：Jqury代码1W+行，为了使用$ajax下载jquery大可不必</p>
-<p>vue-resource<br>特点：支持vue1.x，不支持新版本，官方也不再推荐使用</p>
-<p>axios<br>特点：本身是一个promise对象</p>
-</blockquote>
-<h3 id="跨域设置"><a href="#跨域设置" class="headerlink" title="跨域设置"></a>跨域设置</h3><p>接口示例：<a href="http://123.207.32.32:8000/home/multidata">coderwhy的接口</a></p>
-<p>这里以vue为例：<br>跨域设置本地服务器需要加上协议，如target:”<a href="http://localhost:3000&quot;">http://localhost:3000&quot;</a><br>axios在解析域名时先在遇到&#x2F;api前缀在其前加target后将&#x2F;api转换为pathRewrite中对应的内容</p>
-<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><blockquote>
-<p>取消请求使用配置对象canceltoken属性</p>
-<p>axios发送并发请求axios.all(类似于Promise.all),并可使用axios.spread展开结果的数组</p>
-<p>不传method默认get请求，get请求是通过query传递参数的,axios中是params；post是通过requesbody传递参数,axios中是data</p>
-<p>axios的封装。不要在每一个组件中单独引用axios，万一axios不再维护需要另一个框架来替换的时候代码量太大</p>
-</blockquote>
-<hr>
-<p>中文文档：<a href="http://www.axios-js.com/zh-cn/docs/">中文文档</a></p>
-<p>参考视频：<br><a href="https://www.bilibili.com/video/BV1wr4y1K7tq?spm_id_from=333.999.0.0">BV1wr4y1K7tq</a>   <a href="https://www.bilibili.com/video/BV17j411f74d?p=141">BV17j411f74d</a></p>
-]]></content>
-      <categories>
-        <category>前端学习</category>
-      </categories>
-      <tags>
-        <tag>axios</tag>
       </tags>
   </entry>
   <entry>
@@ -1628,36 +1628,6 @@
       </tags>
   </entry>
   <entry>
-    <title>vue+swiper实现弹幕滚动效果</title>
-    <url>/2022/08/16/a016-vue-swiper%E5%AE%9E%E7%8E%B0%E5%BC%B9%E5%B9%95%E6%BB%9A%E5%8A%A8%E6%95%88%E6%9E%9C/</url>
-    <content><![CDATA[<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><img src="https://picx-images-hosting-4r8.pages.dev/github-io/example/a016/a016.1hrz2q8o5t.gif" alt="">
-
-<h3 id="依赖版本"><a href="#依赖版本" class="headerlink" title="依赖版本"></a>依赖版本</h3><ol>
-<li>package.json</li>
-</ol>
-<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;swiper&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^3.4.2&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;vue&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^2.5.2&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;vue-awesome-swiper&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^3.1.3&quot;</span><br></code></pre></td></tr></table></figure>
-<ol start="2">
-<li>main.js</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">import</span> <span class="hljs-title class_">VueAwesomeSwiper</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue-awesome-swiper&#x27;</span><br><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;swiper/dist/css/swiper.css&#x27;</span><br><span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">use</span>(<span class="hljs-title class_">VueAwesomeSwiper</span>)<br></code></pre></td></tr></table></figure>
-
-
-<h3 id="html部分"><a href="#html部分" class="headerlink" title="html部分"></a>html部分</h3><figure class="highlight html"><table><tr><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;recom&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;notice-inner&quot;</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">swiper</span></span><br><span class="hljs-tag">          <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;mySwiper&quot;</span></span><br><span class="hljs-tag">          <span class="hljs-attr">:options</span>=<span class="hljs-string">&quot;swiperOptions&quot;</span></span><br><span class="hljs-tag">          <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;operatorList.length &gt; 0&quot;</span></span><br><span class="hljs-tag">          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;notice-warp notice-box1&quot;</span></span><br><span class="hljs-tag">        &gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">swiper-slide</span></span><br><span class="hljs-tag">            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;notice-item&quot;</span></span><br><span class="hljs-tag">            <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;(item, index) in operatorList&quot;</span></span><br><span class="hljs-tag">            <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;index&quot;</span></span><br><span class="hljs-tag">          &gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">:src</span>=<span class="hljs-string">&quot;item.headpoart&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>&#123;&#123; item.nickname &#125;&#125;：&#123;&#123; item.content &#125;&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>          <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-slide</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-name">swiper</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
-
-<h3 id="js部分"><a href="#js部分" class="headerlink" title="js部分"></a>js部分</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&lt;script&gt;<br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;<br>  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-keyword">return</span> &#123;<br>      <span class="hljs-attr">operatorList</span>: [<br>        &#123;<br>          <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;推荐了该商品&#x27;</span>,<br>          <span class="hljs-attr">headpoart</span>:<br>            <span class="hljs-string">&#x27;http://thirdqq.qlogo.cn/g?b=oidb&amp;k=rUNicgjviaaXicdnhE5hsicKcg&amp;s=640&amp;t=1557262645&#x27;</span>,<br>          <span class="hljs-attr">nickname</span>: <span class="hljs-string">&#x27;韩宝妞~&#x27;</span><br>        &#125;,<br>        &#123;<br>          <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;兑换了该商品1次&#x27;</span>,<br>          <span class="hljs-attr">headpoart</span>:<br>            <span class="hljs-string">&#x27;https://csfile.ossxrcloud.net/ydnResource/2022-01-25/155590301611_1643100097337.jpg&#x27;</span>,<br>          <span class="hljs-attr">nickname</span>: <span class="hljs-string">&#x27;菜菜&#x27;</span><br>        &#125;,<br>        &#123;<br>          <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;推荐了该商品&#x27;</span>,<br>          <span class="hljs-attr">headpoart</span>:<br>            <span class="hljs-string">&#x27;https://csfile.ossxrcloud.net/ydnResource/2021-09-16/162400612511_1631762223869.jpg&#x27;</span>,<br>          <span class="hljs-attr">nickname</span>: <span class="hljs-string">&#x27;耳机分泥一半&#x27;</span><br>        &#125;,<br>        &#123;<br>          <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;推荐了该商品&#x27;</span>,<br>          <span class="hljs-attr">headpoart</span>:<br>            <span class="hljs-string">&#x27;https://csfile.ossxrcloud.net/ydnImg/200X200/802dac9a93084_1641346280372.png&#x27;</span>,<br>          <span class="hljs-attr">nickname</span>: <span class="hljs-string">&#x27;本特利&#x27;</span><br>        &#125;,<br>        &#123;<br>          <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;推荐了该商品&#x27;</span>,<br>          <span class="hljs-attr">headpoart</span>:<br>            <span class="hljs-string">&#x27;https://file.xinruiyun.cn/resource/2020-05-15/8349373d-9ab1-4a4d-a59c-8c65e150deb4.png&#x27;</span>,<br>          <span class="hljs-attr">nickname</span>: <span class="hljs-string">&#x27;哈哈哈&#x27;</span><br>        &#125;<br>      ],<br>      <span class="hljs-attr">swiperOptions</span>: &#123;<br>        <span class="hljs-attr">autoplay</span>: &#123;<br>          <span class="hljs-attr">delay</span>: <span class="hljs-number">3000</span><br>        &#125;,<br>        <span class="hljs-attr">direction</span>: <span class="hljs-string">&#x27;vertical&#x27;</span>,<br>        <span class="hljs-attr">loop</span>: <span class="hljs-literal">true</span>,<br>        <span class="hljs-comment">// width: 4.2 * parseInt(document.documentElement.style.fontSize),</span><br>        <span class="hljs-attr">height</span>: <span class="hljs-number">0.68</span> * <span class="hljs-built_in">parseInt</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-property">documentElement</span>.<span class="hljs-property">style</span>.<span class="hljs-property">fontSize</span>),<br>        <span class="hljs-comment">// freeMode:true,</span><br>        <span class="hljs-attr">slidesPerView</span>: <span class="hljs-string">&#x27;auto&#x27;</span>,<br>        <span class="hljs-attr">centeredSlides</span>: <span class="hljs-literal">true</span>,<br>        <span class="hljs-attr">on</span>: &#123;<br>          <span class="hljs-attr">slideChange</span>: <span class="hljs-function">() =&gt;</span> &#123;<br>            <span class="hljs-comment">// this.swiperIndex = this.$refs[&#x27;mySwiper&#x27;].swiper.realIndex;</span><br>          &#125;<br>        &#125;<br>      &#125;,<br>      <span class="hljs-attr">swiperIndex</span>: <span class="hljs-number">0</span><br>    &#125;;<br>  &#125;<br>&#125;;<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
-
-
-<h3 id="css部分"><a href="#css部分" class="headerlink" title="css部分"></a>css部分</h3><figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">&lt;style&gt;<br>* &#123;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;<br>&#125;<br><br><span class="hljs-selector-class">.recom</span> &#123;<br>  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.28rem</span> <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">2.4rem</span>;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;<br>  <span class="hljs-attribute">background</span>: skyblue;<br>  <span class="hljs-comment">/* pointer-events: none; */</span><br>&#125;<br><br><span class="hljs-selector-class">.notice-inner</span> &#123;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0.4rem</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">2.04rem</span>;<br>  <span class="hljs-attribute">overflow</span>: hidden;<br>  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;<br>&#125;<br><br><span class="hljs-selector-class">.notice-item</span> &#123;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">0.68rem</span>;<br>  <span class="hljs-attribute">background</span>: orangered;<br>  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.26rem</span>;<br>  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;<br>  <span class="hljs-attribute">display</span>: flex;<br>  <span class="hljs-attribute">transition-property</span>: top;<br>  <span class="hljs-attribute">transition-timing-function</span>: linear;<br>&#125;<br><br><span class="hljs-selector-class">.notice-item</span><span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">2</span>n) &#123;<br>  <span class="hljs-attribute">background</span>: pink;<br>&#125;<br><br><span class="hljs-selector-class">.notice-item</span><span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">3</span>n) &#123;<br>  <span class="hljs-attribute">background</span>: yellowgreen;<br>&#125;<br><br><span class="hljs-selector-class">.notice-item</span><span class="hljs-selector-class">.swiper-slide</span> &#123;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">0.68rem</span>;<br>&#125;<br><br><span class="hljs-selector-class">.notice-item</span> <span class="hljs-selector-tag">img</span> &#123;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">0.48rem</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">0.48rem</span>;<br>  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0.2rem</span>;<br>  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>前端学习</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-        <tag>swiper</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>electron构建跨平台桌面应用</title>
     <url>/2022/07/22/a015-electron%E6%9E%84%E5%BB%BA%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8/</url>
     <content><![CDATA[<h3 id="electron-vue应用自动更新"><a href="#electron-vue应用自动更新" class="headerlink" title="electron-vue应用自动更新"></a>electron-vue应用自动更新</h3><ol>
@@ -1711,6 +1681,60 @@
       </categories>
       <tags>
         <tag>electron</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue+swiper实现弹幕滚动效果</title>
+    <url>/2022/08/16/a016-vue-swiper%E5%AE%9E%E7%8E%B0%E5%BC%B9%E5%B9%95%E6%BB%9A%E5%8A%A8%E6%95%88%E6%9E%9C/</url>
+    <content><![CDATA[<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><img src="https://picx-images-hosting-4r8.pages.dev/github-io/example/a016/a016.1hrz2q8o5t.gif" alt="">
+
+<h3 id="依赖版本"><a href="#依赖版本" class="headerlink" title="依赖版本"></a>依赖版本</h3><ol>
+<li>package.json</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;swiper&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^3.4.2&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;vue&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^2.5.2&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;vue-awesome-swiper&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^3.1.3&quot;</span><br></code></pre></td></tr></table></figure>
+<ol start="2">
+<li>main.js</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">import</span> <span class="hljs-title class_">VueAwesomeSwiper</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue-awesome-swiper&#x27;</span><br><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;swiper/dist/css/swiper.css&#x27;</span><br><span class="hljs-title class_">Vue</span>.<span class="hljs-title function_">use</span>(<span class="hljs-title class_">VueAwesomeSwiper</span>)<br></code></pre></td></tr></table></figure>
+
+
+<h3 id="html部分"><a href="#html部分" class="headerlink" title="html部分"></a>html部分</h3><figure class="highlight html"><table><tr><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;app&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;recom&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;notice-inner&quot;</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">swiper</span></span><br><span class="hljs-tag">          <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;mySwiper&quot;</span></span><br><span class="hljs-tag">          <span class="hljs-attr">:options</span>=<span class="hljs-string">&quot;swiperOptions&quot;</span></span><br><span class="hljs-tag">          <span class="hljs-attr">v-if</span>=<span class="hljs-string">&quot;operatorList.length &gt; 0&quot;</span></span><br><span class="hljs-tag">          <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;notice-warp notice-box1&quot;</span></span><br><span class="hljs-tag">        &gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">swiper-slide</span></span><br><span class="hljs-tag">            <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;notice-item&quot;</span></span><br><span class="hljs-tag">            <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;(item, index) in operatorList&quot;</span></span><br><span class="hljs-tag">            <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;index&quot;</span></span><br><span class="hljs-tag">          &gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">:src</span>=<span class="hljs-string">&quot;item.headpoart&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> /&gt;</span><br>            <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>&#123;&#123; item.nickname &#125;&#125;：&#123;&#123; item.content &#125;&#125;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>          <span class="hljs-tag">&lt;/<span class="hljs-name">swiper-slide</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-name">swiper</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+
+<h3 id="js部分"><a href="#js部分" class="headerlink" title="js部分"></a>js部分</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&lt;script&gt;<br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> &#123;<br>  <span class="hljs-title function_">data</span>(<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-keyword">return</span> &#123;<br>      <span class="hljs-attr">operatorList</span>: [<br>        &#123;<br>          <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;推荐了该商品&#x27;</span>,<br>          <span class="hljs-attr">headpoart</span>:<br>            <span class="hljs-string">&#x27;http://thirdqq.qlogo.cn/g?b=oidb&amp;k=rUNicgjviaaXicdnhE5hsicKcg&amp;s=640&amp;t=1557262645&#x27;</span>,<br>          <span class="hljs-attr">nickname</span>: <span class="hljs-string">&#x27;韩宝妞~&#x27;</span><br>        &#125;,<br>        &#123;<br>          <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;兑换了该商品1次&#x27;</span>,<br>          <span class="hljs-attr">headpoart</span>:<br>            <span class="hljs-string">&#x27;https://csfile.ossxrcloud.net/ydnResource/2022-01-25/155590301611_1643100097337.jpg&#x27;</span>,<br>          <span class="hljs-attr">nickname</span>: <span class="hljs-string">&#x27;菜菜&#x27;</span><br>        &#125;,<br>        &#123;<br>          <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;推荐了该商品&#x27;</span>,<br>          <span class="hljs-attr">headpoart</span>:<br>            <span class="hljs-string">&#x27;https://csfile.ossxrcloud.net/ydnResource/2021-09-16/162400612511_1631762223869.jpg&#x27;</span>,<br>          <span class="hljs-attr">nickname</span>: <span class="hljs-string">&#x27;耳机分泥一半&#x27;</span><br>        &#125;,<br>        &#123;<br>          <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;推荐了该商品&#x27;</span>,<br>          <span class="hljs-attr">headpoart</span>:<br>            <span class="hljs-string">&#x27;https://csfile.ossxrcloud.net/ydnImg/200X200/802dac9a93084_1641346280372.png&#x27;</span>,<br>          <span class="hljs-attr">nickname</span>: <span class="hljs-string">&#x27;本特利&#x27;</span><br>        &#125;,<br>        &#123;<br>          <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;推荐了该商品&#x27;</span>,<br>          <span class="hljs-attr">headpoart</span>:<br>            <span class="hljs-string">&#x27;https://file.xinruiyun.cn/resource/2020-05-15/8349373d-9ab1-4a4d-a59c-8c65e150deb4.png&#x27;</span>,<br>          <span class="hljs-attr">nickname</span>: <span class="hljs-string">&#x27;哈哈哈&#x27;</span><br>        &#125;<br>      ],<br>      <span class="hljs-attr">swiperOptions</span>: &#123;<br>        <span class="hljs-attr">autoplay</span>: &#123;<br>          <span class="hljs-attr">delay</span>: <span class="hljs-number">3000</span><br>        &#125;,<br>        <span class="hljs-attr">direction</span>: <span class="hljs-string">&#x27;vertical&#x27;</span>,<br>        <span class="hljs-attr">loop</span>: <span class="hljs-literal">true</span>,<br>        <span class="hljs-comment">// width: 4.2 * parseInt(document.documentElement.style.fontSize),</span><br>        <span class="hljs-attr">height</span>: <span class="hljs-number">0.68</span> * <span class="hljs-built_in">parseInt</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-property">documentElement</span>.<span class="hljs-property">style</span>.<span class="hljs-property">fontSize</span>),<br>        <span class="hljs-comment">// freeMode:true,</span><br>        <span class="hljs-attr">slidesPerView</span>: <span class="hljs-string">&#x27;auto&#x27;</span>,<br>        <span class="hljs-attr">centeredSlides</span>: <span class="hljs-literal">true</span>,<br>        <span class="hljs-attr">on</span>: &#123;<br>          <span class="hljs-attr">slideChange</span>: <span class="hljs-function">() =&gt;</span> &#123;<br>            <span class="hljs-comment">// this.swiperIndex = this.$refs[&#x27;mySwiper&#x27;].swiper.realIndex;</span><br>          &#125;<br>        &#125;<br>      &#125;,<br>      <span class="hljs-attr">swiperIndex</span>: <span class="hljs-number">0</span><br>    &#125;;<br>  &#125;<br>&#125;;<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+
+
+<h3 id="css部分"><a href="#css部分" class="headerlink" title="css部分"></a>css部分</h3><figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">&lt;style&gt;<br>* &#123;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;<br>&#125;<br><br><span class="hljs-selector-class">.recom</span> &#123;<br>  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.28rem</span> <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">2.4rem</span>;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;<br>  <span class="hljs-attribute">background</span>: skyblue;<br>  <span class="hljs-comment">/* pointer-events: none; */</span><br>&#125;<br><br><span class="hljs-selector-class">.notice-inner</span> &#123;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">0.4rem</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">2.04rem</span>;<br>  <span class="hljs-attribute">overflow</span>: hidden;<br>  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;<br>&#125;<br><br><span class="hljs-selector-class">.notice-item</span> &#123;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">0.68rem</span>;<br>  <span class="hljs-attribute">background</span>: orangered;<br>  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.26rem</span>;<br>  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;<br>  <span class="hljs-attribute">display</span>: flex;<br>  <span class="hljs-attribute">transition-property</span>: top;<br>  <span class="hljs-attribute">transition-timing-function</span>: linear;<br>&#125;<br><br><span class="hljs-selector-class">.notice-item</span><span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">2</span>n) &#123;<br>  <span class="hljs-attribute">background</span>: pink;<br>&#125;<br><br><span class="hljs-selector-class">.notice-item</span><span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">3</span>n) &#123;<br>  <span class="hljs-attribute">background</span>: yellowgreen;<br>&#125;<br><br><span class="hljs-selector-class">.notice-item</span><span class="hljs-selector-class">.swiper-slide</span> &#123;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">0.68rem</span>;<br>&#125;<br><br><span class="hljs-selector-class">.notice-item</span> <span class="hljs-selector-tag">img</span> &#123;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">0.48rem</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">0.48rem</span>;<br>  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0.2rem</span>;<br>  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>前端学习</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>swiper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>h5实现拖拽排序</title>
+    <url>/2022/12/08/a018-h5%E5%AE%9E%E7%8E%B0%E6%8B%96%E6%8B%BD%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><img src="https://picx-images-hosting-4r8.pages.dev/github-io/example/a018/a018.2dogi6jesy.gif" alt="">
+
+<h3 id="依赖版本"><a href="#依赖版本" class="headerlink" title="依赖版本"></a>依赖版本</h3><ol>
+<li>package.json</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;sortablejs&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^1.15.0&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;vue&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^3.2.41&quot;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="html-部分"><a href="#html-部分" class="headerlink" title="html 部分"></a>html 部分</h3><figure class="highlight html"><table><tr><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">div</span></span><br><span class="hljs-tag">        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;(item, index) in items&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;item.id&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">:style</span>=<span class="hljs-string">&quot;&#123; background: item.color &#125;&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">:data-id</span>=<span class="hljs-string">&quot;item.id&quot;</span></span><br><span class="hljs-tag">      &gt;</span><br>        &#123;&#123; item &#125;&#125;<br>      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="js-部分"><a href="#js-部分" class="headerlink" title="js 部分"></a>js 部分</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&lt;script setup lang=<span class="hljs-string">&quot;ts&quot;</span>&gt;<br><span class="hljs-keyword">import</span> &#123; ref, onMounted &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue&#x27;</span><br><span class="hljs-keyword">import</span> <span class="hljs-title class_">Sortable</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;sortablejs&#x27;</span>;<br><span class="hljs-keyword">const</span> items = <span class="hljs-title function_">ref</span>([<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#3883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#4883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#5883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">4</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#6883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#7883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#8883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">7</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#9883a0&quot;</span> &#125;<br>])<br><br><span class="hljs-keyword">const</span> sort = ref&lt;any[]&gt;([])<br><br><span class="hljs-title function_">onMounted</span>(<span class="hljs-function">() =&gt;</span> &#123;<br>  <span class="hljs-keyword">let</span> el = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.container&#x27;</span>)<br>  <span class="hljs-title class_">Sortable</span>.<span class="hljs-title function_">create</span>(&lt;<span class="hljs-title class_">HTMLElement</span>&gt;el, &#123;<br>    <span class="hljs-attr">animation</span>: <span class="hljs-number">150</span>,<br>    <span class="hljs-title function_">onStart</span>(<span class="hljs-params"></span>) &#123;<br>      sort.<span class="hljs-property">value</span> = []<br>    &#125;,<br>    <span class="hljs-title function_">onEnd</span>(<span class="hljs-params"></span>) &#123;<br>      <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>((<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.container&#x27;</span>) <span class="hljs-keyword">as</span> any).<span class="hljs-property">children</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">item: any</span>) =&gt;</span> &#123;<br>        sort.<span class="hljs-property">value</span>.<span class="hljs-title function_">push</span>(item.<span class="hljs-property">dataset</span>.<span class="hljs-property">id</span>)<br>      &#125;)<br>      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(sort.<span class="hljs-property">value</span>)));<br>    &#125;<br>  &#125;)<br>&#125;)<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+
+<h3 id="css-部分"><a href="#css-部分" class="headerlink" title="css 部分"></a>css 部分</h3><figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">&lt;style lang=&quot;less&quot; scoped&gt;<br><span class="hljs-selector-class">.container</span> &#123;<br>  <span class="hljs-attribute">display</span>: flex;<br>  <span class="hljs-attribute">flex-wrap</span>: wrap;<br>&#125;<br><br><span class="hljs-selector-class">.item</span> &#123;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>前端学习</category>
+      </categories>
+      <tags>
+        <tag>拖拽排序</tag>
+        <tag>sortablejs</tag>
       </tags>
   </entry>
   <entry>
@@ -1952,27 +1976,38 @@
       </tags>
   </entry>
   <entry>
-    <title>h5实现拖拽排序</title>
-    <url>/2022/12/08/a018-h5%E5%AE%9E%E7%8E%B0%E6%8B%96%E6%8B%BD%E6%8E%92%E5%BA%8F/</url>
-    <content><![CDATA[<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><img src="https://picx-images-hosting-4r8.pages.dev/github-io/example/a018/a018.2dogi6jesy.gif" alt="">
+    <title>js迭代器和生成器</title>
+    <url>/2023/06/11/a020-js%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E7%94%9F%E6%88%90%E5%99%A8/</url>
+    <content><![CDATA[<h3 id="迭代器和生成器-Iterators-amp-generators"><a href="#迭代器和生成器-Iterators-amp-generators" class="headerlink" title="迭代器和生成器(Iterators&amp;generators)"></a>迭代器和生成器(Iterators&amp;generators)</h3><h3 id="可迭代对象的应用场景"><a href="#可迭代对象的应用场景" class="headerlink" title="可迭代对象的应用场景"></a>可迭代对象的应用场景</h3><blockquote>
+<p>js中语法：for…of、展开语法(spread syntax)、yield*、解构赋值(Destructuring_assignment)；<br>创建一些对象时：new Map([Iterable])、new WeakMap([Iterable])、new Set([Iterable])、new WeakSet([Iterable])；<br>一些方法的调用：Promise.all(Iterable)、Promise.race(Iterable)、Array.from(Iterable)</p>
+</blockquote>
+<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3><p>是 es6 中新增的一种函数控制、使用方案，可以让我们更加灵活的控制函数什么时候继续执行、暂停执行等。</p>
+<blockquote>
+<p>生成器函数需要加*<br>生成器函数可以通过 yield 关键字来控制函数的执行流程<br>生成器函数的返回值是一个生成器(Generator)<br>生成器是一种特殊的迭代器<br>生成器是async&#x2F;await的语法糖</p>
+</blockquote>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> names = [<span class="hljs-string">&#x27;hello&#x27;</span>, <span class="hljs-string">&#x27;iterators&#x27;</span>, <span class="hljs-string">&#x27;speak&#x27;</span>]<br><br><span class="hljs-keyword">function</span> <span class="hljs-title function_">createArrIterators</span>(<span class="hljs-params">arr</span>) &#123;<br>    <span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span><br>    <span class="hljs-keyword">return</span> &#123;<br>        <span class="hljs-title function_">next</span>(<span class="hljs-params"></span>) &#123;<br>            <span class="hljs-keyword">if</span> (index &lt; arr.<span class="hljs-property">length</span>) &#123;<br>                <span class="hljs-keyword">return</span> &#123;<br>                    <span class="hljs-attr">done</span>: <span class="hljs-literal">false</span>,<br>                    <span class="hljs-attr">value</span>: arr[index++]<br>                &#125;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                <span class="hljs-keyword">return</span> &#123;<br>                    <span class="hljs-attr">done</span>: <span class="hljs-literal">true</span>,<br>                    <span class="hljs-attr">value</span>: <span class="hljs-literal">undefined</span><br>                &#125;<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br><span class="hljs-keyword">const</span> namesIterator = <span class="hljs-title function_">createArrIterators</span>(names)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(namesIterator.<span class="hljs-title function_">next</span>());<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(namesIterator.<span class="hljs-title function_">next</span>());<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(namesIterator.<span class="hljs-title function_">next</span>());<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(namesIterator.<span class="hljs-title function_">next</span>());<br></code></pre></td></tr></table></figure>
 
-<h3 id="依赖版本"><a href="#依赖版本" class="headerlink" title="依赖版本"></a>依赖版本</h3><ol>
-<li>package.json</li>
-</ol>
-<figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;sortablejs&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^1.15.0&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;vue&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;^3.2.41&quot;</span><br></code></pre></td></tr></table></figure>
+<h3 id="可迭代对象"><a href="#可迭代对象" class="headerlink" title="可迭代对象"></a>可迭代对象</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> info = &#123;<br>    <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;jack&#x27;</span>,<br>    <span class="hljs-attr">age</span>: <span class="hljs-number">25</span>,<br>    <span class="hljs-attr">gender</span>: <span class="hljs-string">&#x27;男&#x27;</span>,<br>    [<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>]() &#123; <span class="hljs-comment">//计算属性名</span><br>        <span class="hljs-comment">// const keys = Object.keys(this)</span><br>        <span class="hljs-comment">// const values = Object.values(this)</span><br>        <span class="hljs-keyword">const</span> entries = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">entries</span>(<span class="hljs-variable language_">this</span>)<br>        <span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span><br>        <span class="hljs-keyword">return</span> &#123;<br>            <span class="hljs-attr">next</span>: <span class="hljs-function">() =&gt;</span> &#123;<br>                <span class="hljs-keyword">if</span> (index &lt; entries.<span class="hljs-property">length</span>) &#123;<br>                    <span class="hljs-keyword">return</span> &#123;<br>                        <span class="hljs-attr">done</span>: <span class="hljs-literal">false</span>,<br>                        <span class="hljs-attr">value</span>: entries[index++]<br>                    &#125;<br>                &#125; <span class="hljs-keyword">else</span> &#123;<br>                    <span class="hljs-keyword">return</span> &#123;<br>                        <span class="hljs-attr">done</span>: <span class="hljs-literal">true</span>,<br>                        <span class="hljs-attr">value</span>: <span class="hljs-literal">undefined</span><br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br><span class="hljs-keyword">const</span> infoIterator = info[<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>]()<br><span class="hljs-comment">// console.log(infoIterator.next());</span><br><span class="hljs-comment">// console.log(infoIterator.next());</span><br><span class="hljs-comment">// console.log(infoIterator.next());</span><br><span class="hljs-comment">// console.log(infoIterator.next());</span><br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> info) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(item);<br>&#125;<br><br><span class="hljs-keyword">const</span> numarr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]<br><span class="hljs-keyword">const</span> numarrIterator = numarr[<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>]()<br><span class="hljs-comment">// console.log(numarrIterator.next());</span><br><span class="hljs-comment">// console.log(numarrIterator.next());</span><br><span class="hljs-comment">// console.log(numarrIterator.next());</span><br><span class="hljs-comment">// console.log(numarrIterator.next());</span><br></code></pre></td></tr></table></figure>
 
-<h3 id="html-部分"><a href="#html-部分" class="headerlink" title="html 部分"></a>html 部分</h3><figure class="highlight html"><table><tr><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;wrapper&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;container&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">div</span></span><br><span class="hljs-tag">        <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;item&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">v-for</span>=<span class="hljs-string">&quot;(item, index) in items&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">:key</span>=<span class="hljs-string">&quot;item.id&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">:style</span>=<span class="hljs-string">&quot;&#123; background: item.color &#125;&quot;</span></span><br><span class="hljs-tag">        <span class="hljs-attr">:data-id</span>=<span class="hljs-string">&quot;item.id&quot;</span></span><br><span class="hljs-tag">      &gt;</span><br>        &#123;&#123; item &#125;&#125;<br>      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<h3 id="自定义类的迭代"><a href="#自定义类的迭代" class="headerlink" title="自定义类的迭代"></a>自定义类的迭代</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> &#123;<br>    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name, age, gender, friend</span>) &#123;<br>            <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name<br>            <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age<br>            <span class="hljs-variable language_">this</span>.<span class="hljs-property">gender</span> = gender<br>            <span class="hljs-variable language_">this</span>.<span class="hljs-property">friend</span> = friend<br>        &#125;<br>        [<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>]() &#123;<br>            <span class="hljs-keyword">const</span> entries = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">entries</span>(<span class="hljs-variable language_">this</span>)<br>            <span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span><br>            <span class="hljs-keyword">return</span> &#123;<br>                <span class="hljs-attr">next</span>: <span class="hljs-function">() =&gt;</span> &#123;<br>                    <span class="hljs-keyword">if</span> (index &lt; entries.<span class="hljs-property">length</span>) &#123;<br>                        <span class="hljs-keyword">return</span> &#123;<br>                            <span class="hljs-attr">value</span>: entries[index++],<br>                            <span class="hljs-attr">done</span>: <span class="hljs-literal">false</span><br>                        &#125;<br>                    &#125; <span class="hljs-keyword">else</span> &#123;<br>                        <span class="hljs-keyword">return</span> &#123;<br>                            <span class="hljs-attr">value</span>: <span class="hljs-literal">undefined</span>,<br>                            <span class="hljs-attr">done</span>: <span class="hljs-literal">true</span><br>                        &#125;<br>                    &#125;<br>                &#125;,<br>                <span class="hljs-attr">return</span>: <span class="hljs-function">() =&gt;</span> &#123; <span class="hljs-comment">//中断检测</span><br>                    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;迭代器中断了...&#x27;</span>);<br>                    <span class="hljs-keyword">return</span> &#123;<br>                        <span class="hljs-attr">value</span>: <span class="hljs-literal">undefined</span>,<br>                        <span class="hljs-attr">done</span>: <span class="hljs-literal">true</span><br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>&#125;<br><span class="hljs-keyword">const</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">&#x27;jack&#x27;</span>, <span class="hljs-number">25</span>, <span class="hljs-string">&#x27;男&#x27;</span>, [<span class="hljs-string">&#x27;rose&#x27;</span>, <span class="hljs-string">&#x27;akman&#x27;</span>])<br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> p1) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(item);<br>    <span class="hljs-keyword">const</span> [key, value] = item<br>    <span class="hljs-comment">// if (key === &#x27;gender&#x27;) break //return throw</span><br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h3 id="js-部分"><a href="#js-部分" class="headerlink" title="js 部分"></a>js 部分</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript">&lt;script setup lang=<span class="hljs-string">&quot;ts&quot;</span>&gt;<br><span class="hljs-keyword">import</span> &#123; ref, onMounted &#125; <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;vue&#x27;</span><br><span class="hljs-keyword">import</span> <span class="hljs-title class_">Sortable</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;sortablejs&#x27;</span>;<br><span class="hljs-keyword">const</span> items = <span class="hljs-title function_">ref</span>([<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#3883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#4883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#5883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">4</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#6883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#7883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#8883a0&quot;</span> &#125;,<br>  &#123; <span class="hljs-attr">id</span>: <span class="hljs-number">7</span>, <span class="hljs-attr">color</span>: <span class="hljs-string">&quot;#9883a0&quot;</span> &#125;<br>])<br><br><span class="hljs-keyword">const</span> sort = ref&lt;any[]&gt;([])<br><br><span class="hljs-title function_">onMounted</span>(<span class="hljs-function">() =&gt;</span> &#123;<br>  <span class="hljs-keyword">let</span> el = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.container&#x27;</span>)<br>  <span class="hljs-title class_">Sortable</span>.<span class="hljs-title function_">create</span>(&lt;<span class="hljs-title class_">HTMLElement</span>&gt;el, &#123;<br>    <span class="hljs-attr">animation</span>: <span class="hljs-number">150</span>,<br>    <span class="hljs-title function_">onStart</span>(<span class="hljs-params"></span>) &#123;<br>      sort.<span class="hljs-property">value</span> = []<br>    &#125;,<br>    <span class="hljs-title function_">onEnd</span>(<span class="hljs-params"></span>) &#123;<br>      <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>((<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.container&#x27;</span>) <span class="hljs-keyword">as</span> any).<span class="hljs-property">children</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">item: any</span>) =&gt;</span> &#123;<br>        sort.<span class="hljs-property">value</span>.<span class="hljs-title function_">push</span>(item.<span class="hljs-property">dataset</span>.<span class="hljs-property">id</span>)<br>      &#125;)<br>      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(sort.<span class="hljs-property">value</span>)));<br>    &#125;<br>  &#125;)<br>&#125;)<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+<h3 id="生成器函数的使用"><a href="#生成器函数的使用" class="headerlink" title="生成器函数的使用"></a>生成器函数的使用</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">foo</span>(<span class="hljs-params">params1</span>) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">111</span>, params1);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">222</span>, params1);<br>    <span class="hljs-keyword">const</span> params2 = <span class="hljs-keyword">yield</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;aaa&#x27;</span>);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">333</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">444</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">555</span>, params2);<br>    <span class="hljs-keyword">const</span> params3 = <span class="hljs-keyword">yield</span> <span class="hljs-string">&#x27;bbb&#x27;</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">666</span>, params3);<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;ccc&#x27;</span><br>&#125;<br><span class="hljs-keyword">const</span> generator = <span class="hljs-title function_">foo</span>(<span class="hljs-string">&#x27;next1&#x27;</span>)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">//&#123;value:undefined,done:false&#125;</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>(<span class="hljs-string">&#x27;next2&#x27;</span>)); <span class="hljs-comment">//&#123;value:&#x27;bbb&#x27;,done:false&#125;</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>(<span class="hljs-string">&#x27;next3&#x27;</span>)); <span class="hljs-comment">//&#123;value:&#x27;ccc&#x27;,done:true&#125;</span><br></code></pre></td></tr></table></figure>
 
-<h3 id="css-部分"><a href="#css-部分" class="headerlink" title="css 部分"></a>css 部分</h3><figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">&lt;style lang=&quot;less&quot; scoped&gt;<br><span class="hljs-selector-class">.container</span> &#123;<br>  <span class="hljs-attribute">display</span>: flex;<br>  <span class="hljs-attribute">flex-wrap</span>: wrap;<br>&#125;<br><br><span class="hljs-selector-class">.item</span> &#123;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span>;<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure>
+<h3 id="生成器函数提前结束"><a href="#生成器函数提前结束" class="headerlink" title="生成器函数提前结束"></a>生成器函数提前结束</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">foo</span>(<span class="hljs-params">params1</span>) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">111</span>, params1);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">222</span>, params1);<br>    <span class="hljs-keyword">const</span> params2 = <span class="hljs-keyword">yield</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;aaa&#x27;</span>);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">333</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">444</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">555</span>, params2);<br>    <span class="hljs-keyword">const</span> params3 = <span class="hljs-keyword">yield</span> <span class="hljs-string">&#x27;bbb&#x27;</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">666</span>, params3);<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;ccc&#x27;</span><br>&#125;<br><span class="hljs-keyword">const</span> generator = <span class="hljs-title function_">foo</span>(<span class="hljs-string">&#x27;next1&#x27;</span>)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">//&#123;value:undefined,done:false&#125;</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-keyword">return</span>(<span class="hljs-string">&#x27;next2&#x27;</span>)); <span class="hljs-comment">//&#123;value:&#x27;next2&#x27;,done:true&#125;</span><br><span class="hljs-comment">// console.log(generator.throw(new Error(&#x27;next2&#x27;)));</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;------------------------&#x27;</span>);<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>(<span class="hljs-string">&#x27;next3&#x27;</span>)); <span class="hljs-comment">//&#123;value:undefined,done:true&#125;</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="生成器代替迭代器"><a href="#生成器代替迭代器" class="headerlink" title="生成器代替迭代器"></a>生成器代替迭代器</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> names = [<span class="hljs-string">&#x27;jack&#x27;</span>, <span class="hljs-string">&#x27;rose&#x27;</span>, <span class="hljs-string">&#x27;akman&#x27;</span>]<br><br><span class="hljs-keyword">function</span>* <span class="hljs-title function_">createItretaor</span>(<span class="hljs-params">arr</span>) &#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arr.<span class="hljs-property">length</span>; i++) &#123;<br>        <span class="hljs-keyword">yield</span> arr[i];<br>    &#125;<br>&#125;<br><span class="hljs-keyword">const</span> namesItretaor = <span class="hljs-title function_">createItretaor</span>(names)<br><span class="hljs-comment">// console.log(namesItretaor.next());</span><br><span class="hljs-comment">// console.log(namesItretaor.next());</span><br><span class="hljs-comment">// console.log(namesItretaor.next());</span><br><span class="hljs-comment">// console.log(namesItretaor.next());</span><br><br><span class="hljs-comment">//生成器函数，可以生成某个范围的值</span><br><span class="hljs-keyword">function</span>* <span class="hljs-title function_">createRangeGenerator</span>(<span class="hljs-params">start, end</span>) &#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; end; i++) &#123;<br>        <span class="hljs-keyword">yield</span> i<br>    &#125;<br>&#125;<br><span class="hljs-keyword">const</span> rangeGen = <span class="hljs-title function_">createRangeGenerator</span>(<span class="hljs-number">3</span>, <span class="hljs-number">7</span>)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(rangeGen.<span class="hljs-title function_">next</span>());<br></code></pre></td></tr></table></figure>
+
+<h3 id="生成器yield语法糖"><a href="#生成器yield语法糖" class="headerlink" title="生成器yield语法糖"></a>生成器yield语法糖</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">foo</span>(<span class="hljs-params">params1</span>) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">111</span>, params1);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">222</span>, params1);<br>    <span class="hljs-keyword">const</span> params2 = <span class="hljs-keyword">yield</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;aaa&#x27;</span>);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">333</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">444</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">555</span>, params2);<br>    <span class="hljs-keyword">const</span> params3 = <span class="hljs-keyword">yield</span> <span class="hljs-string">&#x27;bbb&#x27;</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">666</span>, params3);<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;ccc&#x27;</span><br>&#125;<br><span class="hljs-keyword">const</span> generator = <span class="hljs-title function_">foo</span>(<span class="hljs-string">&#x27;next1&#x27;</span>)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">//&#123;value:undefined,done:false&#125;</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>(<span class="hljs-string">&#x27;next2&#x27;</span>)); <span class="hljs-comment">//&#123;value:&#x27;bbb&#x27;,done:false&#125;</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>(<span class="hljs-string">&#x27;next3&#x27;</span>)); <span class="hljs-comment">//&#123;value:&#x27;ccc&#x27;,done:true&#125;</span><br></code></pre></td></tr></table></figure>
+
+<hr>
+<p>参考视频：<a href="https://www.bilibili.com/video/BV1TY411B71U">coderwhy BV1TY411B71U</a></p>
 ]]></content>
       <categories>
         <category>前端学习</category>
       </categories>
       <tags>
-        <tag>拖拽排序</tag>
-        <tag>sortablejs</tag>
+        <tag>迭代器Iterators</tag>
+        <tag>生成器generators</tag>
       </tags>
   </entry>
   <entry>
@@ -2045,41 +2080,6 @@
       </tags>
   </entry>
   <entry>
-    <title>js迭代器和生成器</title>
-    <url>/2023/06/11/a020-js%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E7%94%9F%E6%88%90%E5%99%A8/</url>
-    <content><![CDATA[<h3 id="迭代器和生成器-Iterators-amp-generators"><a href="#迭代器和生成器-Iterators-amp-generators" class="headerlink" title="迭代器和生成器(Iterators&amp;generators)"></a>迭代器和生成器(Iterators&amp;generators)</h3><h3 id="可迭代对象的应用场景"><a href="#可迭代对象的应用场景" class="headerlink" title="可迭代对象的应用场景"></a>可迭代对象的应用场景</h3><blockquote>
-<p>js中语法：for…of、展开语法(spread syntax)、yield*、解构赋值(Destructuring_assignment)；<br>创建一些对象时：new Map([Iterable])、new WeakMap([Iterable])、new Set([Iterable])、new WeakSet([Iterable])；<br>一些方法的调用：Promise.all(Iterable)、Promise.race(Iterable)、Array.from(Iterable)</p>
-</blockquote>
-<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3><p>是 es6 中新增的一种函数控制、使用方案，可以让我们更加灵活的控制函数什么时候继续执行、暂停执行等。</p>
-<blockquote>
-<p>生成器函数需要加*<br>生成器函数可以通过 yield 关键字来控制函数的执行流程<br>生成器函数的返回值是一个生成器(Generator)<br>生成器是一种特殊的迭代器<br>生成器是async&#x2F;await的语法糖</p>
-</blockquote>
-<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> names = [<span class="hljs-string">&#x27;hello&#x27;</span>, <span class="hljs-string">&#x27;iterators&#x27;</span>, <span class="hljs-string">&#x27;speak&#x27;</span>]<br><br><span class="hljs-keyword">function</span> <span class="hljs-title function_">createArrIterators</span>(<span class="hljs-params">arr</span>) &#123;<br>    <span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span><br>    <span class="hljs-keyword">return</span> &#123;<br>        <span class="hljs-title function_">next</span>(<span class="hljs-params"></span>) &#123;<br>            <span class="hljs-keyword">if</span> (index &lt; arr.<span class="hljs-property">length</span>) &#123;<br>                <span class="hljs-keyword">return</span> &#123;<br>                    <span class="hljs-attr">done</span>: <span class="hljs-literal">false</span>,<br>                    <span class="hljs-attr">value</span>: arr[index++]<br>                &#125;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                <span class="hljs-keyword">return</span> &#123;<br>                    <span class="hljs-attr">done</span>: <span class="hljs-literal">true</span>,<br>                    <span class="hljs-attr">value</span>: <span class="hljs-literal">undefined</span><br>                &#125;<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br><span class="hljs-keyword">const</span> namesIterator = <span class="hljs-title function_">createArrIterators</span>(names)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(namesIterator.<span class="hljs-title function_">next</span>());<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(namesIterator.<span class="hljs-title function_">next</span>());<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(namesIterator.<span class="hljs-title function_">next</span>());<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(namesIterator.<span class="hljs-title function_">next</span>());<br></code></pre></td></tr></table></figure>
-
-<h3 id="可迭代对象"><a href="#可迭代对象" class="headerlink" title="可迭代对象"></a>可迭代对象</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> info = &#123;<br>    <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;jack&#x27;</span>,<br>    <span class="hljs-attr">age</span>: <span class="hljs-number">25</span>,<br>    <span class="hljs-attr">gender</span>: <span class="hljs-string">&#x27;男&#x27;</span>,<br>    [<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>]() &#123; <span class="hljs-comment">//计算属性名</span><br>        <span class="hljs-comment">// const keys = Object.keys(this)</span><br>        <span class="hljs-comment">// const values = Object.values(this)</span><br>        <span class="hljs-keyword">const</span> entries = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">entries</span>(<span class="hljs-variable language_">this</span>)<br>        <span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span><br>        <span class="hljs-keyword">return</span> &#123;<br>            <span class="hljs-attr">next</span>: <span class="hljs-function">() =&gt;</span> &#123;<br>                <span class="hljs-keyword">if</span> (index &lt; entries.<span class="hljs-property">length</span>) &#123;<br>                    <span class="hljs-keyword">return</span> &#123;<br>                        <span class="hljs-attr">done</span>: <span class="hljs-literal">false</span>,<br>                        <span class="hljs-attr">value</span>: entries[index++]<br>                    &#125;<br>                &#125; <span class="hljs-keyword">else</span> &#123;<br>                    <span class="hljs-keyword">return</span> &#123;<br>                        <span class="hljs-attr">done</span>: <span class="hljs-literal">true</span>,<br>                        <span class="hljs-attr">value</span>: <span class="hljs-literal">undefined</span><br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br><span class="hljs-keyword">const</span> infoIterator = info[<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>]()<br><span class="hljs-comment">// console.log(infoIterator.next());</span><br><span class="hljs-comment">// console.log(infoIterator.next());</span><br><span class="hljs-comment">// console.log(infoIterator.next());</span><br><span class="hljs-comment">// console.log(infoIterator.next());</span><br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> info) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(item);<br>&#125;<br><br><span class="hljs-keyword">const</span> numarr = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]<br><span class="hljs-keyword">const</span> numarrIterator = numarr[<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>]()<br><span class="hljs-comment">// console.log(numarrIterator.next());</span><br><span class="hljs-comment">// console.log(numarrIterator.next());</span><br><span class="hljs-comment">// console.log(numarrIterator.next());</span><br><span class="hljs-comment">// console.log(numarrIterator.next());</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="自定义类的迭代"><a href="#自定义类的迭代" class="headerlink" title="自定义类的迭代"></a>自定义类的迭代</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person</span> &#123;<br>    <span class="hljs-title function_">constructor</span>(<span class="hljs-params">name, age, gender, friend</span>) &#123;<br>            <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name<br>            <span class="hljs-variable language_">this</span>.<span class="hljs-property">age</span> = age<br>            <span class="hljs-variable language_">this</span>.<span class="hljs-property">gender</span> = gender<br>            <span class="hljs-variable language_">this</span>.<span class="hljs-property">friend</span> = friend<br>        &#125;<br>        [<span class="hljs-title class_">Symbol</span>.<span class="hljs-property">iterator</span>]() &#123;<br>            <span class="hljs-keyword">const</span> entries = <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">entries</span>(<span class="hljs-variable language_">this</span>)<br>            <span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span><br>            <span class="hljs-keyword">return</span> &#123;<br>                <span class="hljs-attr">next</span>: <span class="hljs-function">() =&gt;</span> &#123;<br>                    <span class="hljs-keyword">if</span> (index &lt; entries.<span class="hljs-property">length</span>) &#123;<br>                        <span class="hljs-keyword">return</span> &#123;<br>                            <span class="hljs-attr">value</span>: entries[index++],<br>                            <span class="hljs-attr">done</span>: <span class="hljs-literal">false</span><br>                        &#125;<br>                    &#125; <span class="hljs-keyword">else</span> &#123;<br>                        <span class="hljs-keyword">return</span> &#123;<br>                            <span class="hljs-attr">value</span>: <span class="hljs-literal">undefined</span>,<br>                            <span class="hljs-attr">done</span>: <span class="hljs-literal">true</span><br>                        &#125;<br>                    &#125;<br>                &#125;,<br>                <span class="hljs-attr">return</span>: <span class="hljs-function">() =&gt;</span> &#123; <span class="hljs-comment">//中断检测</span><br>                    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;迭代器中断了...&#x27;</span>);<br>                    <span class="hljs-keyword">return</span> &#123;<br>                        <span class="hljs-attr">value</span>: <span class="hljs-literal">undefined</span>,<br>                        <span class="hljs-attr">done</span>: <span class="hljs-literal">true</span><br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>&#125;<br><span class="hljs-keyword">const</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Person</span>(<span class="hljs-string">&#x27;jack&#x27;</span>, <span class="hljs-number">25</span>, <span class="hljs-string">&#x27;男&#x27;</span>, [<span class="hljs-string">&#x27;rose&#x27;</span>, <span class="hljs-string">&#x27;akman&#x27;</span>])<br><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> p1) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(item);<br>    <span class="hljs-keyword">const</span> [key, value] = item<br>    <span class="hljs-comment">// if (key === &#x27;gender&#x27;) break //return throw</span><br>&#125;<br></code></pre></td></tr></table></figure>
-
-<h3 id="生成器函数的使用"><a href="#生成器函数的使用" class="headerlink" title="生成器函数的使用"></a>生成器函数的使用</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">foo</span>(<span class="hljs-params">params1</span>) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">111</span>, params1);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">222</span>, params1);<br>    <span class="hljs-keyword">const</span> params2 = <span class="hljs-keyword">yield</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;aaa&#x27;</span>);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">333</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">444</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">555</span>, params2);<br>    <span class="hljs-keyword">const</span> params3 = <span class="hljs-keyword">yield</span> <span class="hljs-string">&#x27;bbb&#x27;</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">666</span>, params3);<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;ccc&#x27;</span><br>&#125;<br><span class="hljs-keyword">const</span> generator = <span class="hljs-title function_">foo</span>(<span class="hljs-string">&#x27;next1&#x27;</span>)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">//&#123;value:undefined,done:false&#125;</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>(<span class="hljs-string">&#x27;next2&#x27;</span>)); <span class="hljs-comment">//&#123;value:&#x27;bbb&#x27;,done:false&#125;</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>(<span class="hljs-string">&#x27;next3&#x27;</span>)); <span class="hljs-comment">//&#123;value:&#x27;ccc&#x27;,done:true&#125;</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="生成器函数提前结束"><a href="#生成器函数提前结束" class="headerlink" title="生成器函数提前结束"></a>生成器函数提前结束</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">foo</span>(<span class="hljs-params">params1</span>) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">111</span>, params1);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">222</span>, params1);<br>    <span class="hljs-keyword">const</span> params2 = <span class="hljs-keyword">yield</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;aaa&#x27;</span>);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">333</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">444</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">555</span>, params2);<br>    <span class="hljs-keyword">const</span> params3 = <span class="hljs-keyword">yield</span> <span class="hljs-string">&#x27;bbb&#x27;</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">666</span>, params3);<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;ccc&#x27;</span><br>&#125;<br><span class="hljs-keyword">const</span> generator = <span class="hljs-title function_">foo</span>(<span class="hljs-string">&#x27;next1&#x27;</span>)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">//&#123;value:undefined,done:false&#125;</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-keyword">return</span>(<span class="hljs-string">&#x27;next2&#x27;</span>)); <span class="hljs-comment">//&#123;value:&#x27;next2&#x27;,done:true&#125;</span><br><span class="hljs-comment">// console.log(generator.throw(new Error(&#x27;next2&#x27;)));</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;------------------------&#x27;</span>);<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>(<span class="hljs-string">&#x27;next3&#x27;</span>)); <span class="hljs-comment">//&#123;value:undefined,done:true&#125;</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="生成器代替迭代器"><a href="#生成器代替迭代器" class="headerlink" title="生成器代替迭代器"></a>生成器代替迭代器</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> names = [<span class="hljs-string">&#x27;jack&#x27;</span>, <span class="hljs-string">&#x27;rose&#x27;</span>, <span class="hljs-string">&#x27;akman&#x27;</span>]<br><br><span class="hljs-keyword">function</span>* <span class="hljs-title function_">createItretaor</span>(<span class="hljs-params">arr</span>) &#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arr.<span class="hljs-property">length</span>; i++) &#123;<br>        <span class="hljs-keyword">yield</span> arr[i];<br>    &#125;<br>&#125;<br><span class="hljs-keyword">const</span> namesItretaor = <span class="hljs-title function_">createItretaor</span>(names)<br><span class="hljs-comment">// console.log(namesItretaor.next());</span><br><span class="hljs-comment">// console.log(namesItretaor.next());</span><br><span class="hljs-comment">// console.log(namesItretaor.next());</span><br><span class="hljs-comment">// console.log(namesItretaor.next());</span><br><br><span class="hljs-comment">//生成器函数，可以生成某个范围的值</span><br><span class="hljs-keyword">function</span>* <span class="hljs-title function_">createRangeGenerator</span>(<span class="hljs-params">start, end</span>) &#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = start; i &lt; end; i++) &#123;<br>        <span class="hljs-keyword">yield</span> i<br>    &#125;<br>&#125;<br><span class="hljs-keyword">const</span> rangeGen = <span class="hljs-title function_">createRangeGenerator</span>(<span class="hljs-number">3</span>, <span class="hljs-number">7</span>)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(rangeGen.<span class="hljs-title function_">next</span>());<br></code></pre></td></tr></table></figure>
-
-<h3 id="生成器yield语法糖"><a href="#生成器yield语法糖" class="headerlink" title="生成器yield语法糖"></a>生成器yield语法糖</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">function</span>* <span class="hljs-title function_">foo</span>(<span class="hljs-params">params1</span>) &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">111</span>, params1);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">222</span>, params1);<br>    <span class="hljs-keyword">const</span> params2 = <span class="hljs-keyword">yield</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;aaa&#x27;</span>);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">333</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">444</span>, params2);<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">555</span>, params2);<br>    <span class="hljs-keyword">const</span> params3 = <span class="hljs-keyword">yield</span> <span class="hljs-string">&#x27;bbb&#x27;</span><br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">666</span>, params3);<br>    <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;ccc&#x27;</span><br>&#125;<br><span class="hljs-keyword">const</span> generator = <span class="hljs-title function_">foo</span>(<span class="hljs-string">&#x27;next1&#x27;</span>)<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>()); <span class="hljs-comment">//&#123;value:undefined,done:false&#125;</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>(<span class="hljs-string">&#x27;next2&#x27;</span>)); <span class="hljs-comment">//&#123;value:&#x27;bbb&#x27;,done:false&#125;</span><br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(generator.<span class="hljs-title function_">next</span>(<span class="hljs-string">&#x27;next3&#x27;</span>)); <span class="hljs-comment">//&#123;value:&#x27;ccc&#x27;,done:true&#125;</span><br></code></pre></td></tr></table></figure>
-
-<hr>
-<p>参考视频：<a href="https://www.bilibili.com/video/BV1TY411B71U">coderwhy BV1TY411B71U</a></p>
-]]></content>
-      <categories>
-        <category>前端学习</category>
-      </categories>
-      <tags>
-        <tag>迭代器Iterators</tag>
-        <tag>生成器generators</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搜索-关键词高亮</title>
     <url>/2023/08/13/a021-%E6%90%9C%E7%B4%A2-%E5%85%B3%E9%94%AE%E8%AF%8D%E9%AB%98%E4%BA%AE/</url>
     <content><![CDATA[<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><img src="https://picx-images-hosting-4r8.pages.dev/github-io/example/a021/a021.8s32ds2yg2.gif" alt="">
@@ -2139,14 +2139,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【置顶】写在前面</title>
-    <url>/2022/07/15/b001-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/</url>
-    <content><![CDATA[<p><strong>看了网上很多大神的文章，最近想着搭建一个自己的博客，发现hexo+git简单又好用，于是乎就自己琢磨，搭建了这个博客！</strong><br><strong>交流学习的同时记录一下自己的所见所想！</strong><br><strong>以前的学习笔记也会陆陆续续的搬运过来！</strong><br><strong>有些代码量大的知识点，我会尽量精简！</strong><br><strong>欢迎留言评论！</strong><br><strong>life is fantastic！</strong></p>
-<p>今日份推荐歌曲《还在流浪》，杰伦新歌耶！</p>
-<iframe src="//player.bilibili.com/player.html?aid=215901212&bvid=BV1Da411n793&cid=772894060&page=1" width="100%" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-]]></content>
-  </entry>
-  <entry>
     <title>分页加载生成瀑布流</title>
     <url>/2024/01/14/a024-%E5%88%86%E9%A1%B5%E5%8A%A0%E8%BD%BD%E7%94%9F%E6%88%90%E7%80%91%E5%B8%83%E6%B5%81/</url>
     <content><![CDATA[<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><img src="https://picx-images-hosting-4r8.pages.dev/github-io/example/a024/a024.2yy44hp5cr.gif" alt="">
@@ -2164,5 +2156,13 @@
       <tags>
         <tag>瀑布流</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>【置顶】写在前面</title>
+    <url>/2022/07/15/b001-%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/</url>
+    <content><![CDATA[<p><strong>看了网上很多大神的文章，最近想着搭建一个自己的博客，发现hexo+git简单又好用，于是乎就自己琢磨，搭建了这个博客！</strong><br><strong>交流学习的同时记录一下自己的所见所想！</strong><br><strong>以前的学习笔记也会陆陆续续的搬运过来！</strong><br><strong>有些代码量大的知识点，我会尽量精简！</strong><br><strong>欢迎留言评论！</strong><br><strong>life is fantastic！</strong></p>
+<p>今日份推荐歌曲《还在流浪》，杰伦新歌耶！</p>
+<iframe src="//player.bilibili.com/player.html?aid=215901212&bvid=BV1Da411n793&cid=772894060&page=1" width="100%" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+]]></content>
   </entry>
 </search>
