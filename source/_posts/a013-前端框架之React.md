@@ -148,7 +148,7 @@ state存在于组件实例对象上
 >state最开始定义在React.Component类上值为null，通过继承到了类组件上;类组件通过重新定义从而覆盖了父类上的state，并应用到了每一个组件实例上。 
 >
 >为什么会this丢失？ 因为this.changeWheather并不是直接调用，而是给了onClick作为回调点击之后才调用。
-![this丢失](https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a013/this丢失.6f0fwkgdxy.jpg)
+![this丢失](https://picx-images-hosting-4r8.pages.dev/github-io/example/a013/this丢失.6f0fwkgdxy.jpg)
 
 
 >注意状态不可直接更改，要借助一个内置的API(setState存在于React.Component的原型上)，setState更新状态是一个合并的动作不是替换;  
@@ -241,7 +241,7 @@ react中的事件是通过事件委托方式处理的(委托给组件最外层�
 
 ### 组件的生命周期
 #### 旧生命周期 
-![旧生命周期](https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a013/生命周期(旧).101xe518kc.jpg)
+![旧生命周期](https://picx-images-hosting-4r8.pages.dev/github-io/example/a013/生命周期(旧).101xe518kc.jpg)
 
 常用：  
 >componentDidMount               一般做一些初始化的事，例如：开启定时器、发送网络请求、订阅消息  
@@ -249,7 +249,7 @@ react中的事件是通过事件委托方式处理的(委托给组件最外层�
 >render                          必须使用  
 
 #### 新生命周期
-![新生命周期](https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a013/生命周期(新).99t42cvkpp.jpg)
+![新生命周期](https://picx-images-hosting-4r8.pages.dev/github-io/example/a013/生命周期(新).99t42cvkpp.jpg)
 
 新旧生命周期对比：   
 >旧废弃三个(componentWillMount、componentWillUpdate、componentWillRecieveProps) 
@@ -271,7 +271,7 @@ diff的最小单位是节点
 #### 用index作为key可能会引发的问题：  
 对数据进行逆序添加、逆序删除等破坏顺序操作，会产生没有必要的真实dom更新。界面效果没有问题，但效率低。
 
-![index作为key造成不必要的真实dom更新](https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a013/index作为key造成不必要的真实dom更新.1aor7aggpd.jpg)
+![index作为key造成不必要的真实dom更新](https://picx-images-hosting-4r8.pages.dev/github-io/example/a013/index作为key造成不必要的真实dom更新.1aor7aggpd.jpg)
 
 如果不存在上述情况，使用index作为key是没有问题的
 
@@ -332,7 +332,7 @@ defaultValue和value的区别同上
 
 #### ajax
 **跨域代理**
-![跨域代理](https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a013/跨域代理原理.17559kndzt.jpg)
+![跨域代理](https://picx-images-hosting-4r8.pages.dev/github-io/example/a013/跨域代理原理.17559kndzt.jpg)
 
 方式一
 >package.json中配置 (这种方式只能配一个代理)  
@@ -366,9 +366,9 @@ xhr和fetch都是用来发送ajax请求
 >方式一：直接使用H5退出的history身上的api  
 >方式二：hash值(类似于锚点跳转，不会刷新页面，并且有跳转记录)，兼容性好，#号后面的东西不会带给服务器
 
-![后端路由](https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a013/后端路由.8hg8kmeyzc.jpg)
+![后端路由](https://picx-images-hosting-4r8.pages.dev/github-io/example/a013/后端路由.8hg8kmeyzc.jpg)
 
-![前端路由](https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a013/前端路由原理.7w6kybkioq.jpg)
+![前端路由](https://picx-images-hosting-4r8.pages.dev/github-io/example/a013/前端路由原理.7w6kybkioq.jpg)
 
 2. react-router-dom  
 >路由工作过程：点击导航链接引起路径变化，路径变化被路由器检测到进行匹配组件从而展示
@@ -442,7 +442,7 @@ data：数据属性，值为任意类型，可选属性(初始化时没有该属
 3. store       
 将state、action、reduce联系在一起的对象
 
-![原理图](https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a013/redux原理图.1e8d509jf8.jpg)
+![原理图](https://picx-images-hosting-4r8.pages.dev/github-io/example/a013/redux原理图.1e8d509jf8.jpg)
 
 4. redux只负责管理状态，状态改变驱动页面展示，需要自己写
 
@@ -463,7 +463,7 @@ react-redux不需要监听状态更新驱动页面展示
 Provider不需要在每个容器组件上通过props传递store，自动给所有容器组件传递store；这样传UI组件的props中没有store  
 数据共享，需要引入combineReducers；redux管理的状态合并为一个对象
 
-![react-redux模型图](https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a013/react-redux模型图.77dbeawzo2.jpg)
+![react-redux模型图](https://picx-images-hosting-4r8.pages.dev/github-io/example/a013/react-redux模型图.77dbeawzo2.jpg)
 
 #### 纯函数  
 只要是同样的输入，必定得到同样的输出  

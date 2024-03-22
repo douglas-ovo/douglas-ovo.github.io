@@ -11,7 +11,7 @@ index_img: https://img2.baidu.com/it/u=3975996938,3844591049&fm=253&fmt=auto&app
 
 ### 效果
 
-<img src="https://github.com/tianwaibian/picx-images-hosting/raw/master/github-io/example/a022/a022.8kzuicochz.gif" alt="">
+<img src="https://picx-images-hosting-4r8.pages.dev/github-io/example/a022/a022.8kzuicochz.gif" alt="">
 
 ### 描述
 类似于vant组件库的tab组件，可以实现超长自动滚动居中，下划线动态移动
