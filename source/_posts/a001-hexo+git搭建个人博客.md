@@ -92,5 +92,11 @@ scaffolds 中的模板没有生成命令，需要手动生成。
 
 [valine](https://valine.js.org/quickstart.html)
 
+### 图床
+[picx](https://picx-docs.xpoet.cn/)
+[cloudflare](https://dash.cloudflare.com/)
+cloudflare解决github访问不了的问题
+[cloudflare使用](https://picx-images-hosting-4r8.pages.dev/github-io/example/a001/cloudflare.1vyeulhqtf.jpg)
+
 ---
 官方文档：[hexo](https://hexo.io/zh-cn/)
