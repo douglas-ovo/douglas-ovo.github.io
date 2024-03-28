@@ -209,7 +209,7 @@ git checkout -b 分支名 commitid
 > tag 给当前仓库 commitid 记录对应的版本信息，之后可以根据 tag 找到版本对应的 commitid 进行版本控制
 > 开发完新功能后将功能分支合并到主分支，之后打 tag，一般只用给主分支打 tag
 
-```
+```bash
 git tag xxx                            //给最近的commitid打tag，当前未提交则为上次commitid打tag，当前已提交则为本次commitid打tag
 git tag xxx commitid                   //给指定的commitid打tag
 git tag xxx -m "注释" commitid         //给指定的commitid打tag同时添加注释
@@ -221,6 +221,16 @@ git show xxx                           //查看对应tag提交信息
 git tag                                //查看本地所有tag
 git ls-remote --tag                    //查看远程所有tag
 ```
+
+### 常见问题
+
+1. 改了文件名的大小写，git 会认为文件没有变化，从而导致本地和远程仓库不一致
+
+   ```bash
+   git config core.ignorecase false
+   ```
+
+   ​
 
 ---
 
